@@ -12,3 +12,9 @@ body {
   @apply font-heathergreen;
   @apply font-firacode;
 }
+
+@layer utilities {
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+}
