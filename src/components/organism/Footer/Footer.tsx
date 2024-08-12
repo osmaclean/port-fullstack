@@ -44,7 +44,7 @@ export default function Footer() {
           </ul>
         </nav>
 
-        <div className="bg-primary-100 text-primary-500 w-full text-xs inline-block px-4 py-1 text-center">
+        <div className="bg-primary-100 text-primary-500 w-full text-xs inline-block px-8 py-1 text-center">
           Designed and built by{' '}
           <span className="text-primary-300">Lucas Maclean</span> with{' '}
           <span className="text-primary-300">Love</span> &{' '}

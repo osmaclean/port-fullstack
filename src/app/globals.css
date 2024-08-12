@@ -8,9 +8,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Heathergreen";
+  src:
+    url("/fonts/Heathergreen.woff2") format("woff2"),
+    url("/fonts/Heathergreen.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  @apply font-heathergreen;
-  @apply font-firacode;
+  @apply font-heathergreen font-firacode;
 }
 
 @layer utilities {
@@ -20,9 +28,8 @@ body {
 }
 
 .textShadow {
-  text-shadow: 0px 3px 4px rgba(34,37,38,0.4);
+  text-shadow: 0px 3px 4px rgba(34, 37, 38, 0.4);
 }
-
 
 .card {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -30,7 +37,13 @@ body {
 }
 
 .background {
-  background: linear-gradient(354deg, rgba(34,37,38,1) 0%, rgba(56,62,64,1) 35%, rgba(111,115,114,1) 70%, rgba(166,166,166,1) 100%);
+  background: linear-gradient(
+    354deg,
+    rgba(34, 37, 38, 1) 0%,
+    rgba(56, 62, 64, 1) 35%,
+    rgba(111, 115, 114, 1) 70%,
+    rgba(166, 166, 166, 1) 100%
+  );
 }
 
 .logo {
@@ -63,7 +76,13 @@ body {
 }
 
 .box1::before {
-background: linear-gradient(14deg, rgba(166,166,166,1) 0%, rgba(111,115,114,1) 24%, rgba(56,62,64,1) 60%, rgba(34,37,38,1) 100%);
+  background: linear-gradient(
+    14deg,
+    rgba(166, 166, 166, 1) 0%,
+    rgba(111, 115, 114, 1) 24%,
+    rgba(56, 62, 64, 1) 60%,
+    rgba(34, 37, 38, 1) 100%
+  );
 }
 
 .box1:hover::before {
@@ -83,7 +102,11 @@ background: linear-gradient(14deg, rgba(166,166,166,1) 0%, rgba(111,115,114,1) 2
 }
 
 .box2::before {
-  background: linear-gradient(14deg, rgba(255,255,255,1) 0%, rgba(14,118,168,1) 100%);
+  background: linear-gradient(
+    14deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(14, 118, 168, 1) 100%
+  );
 }
 
 .box2:hover::before {
@@ -103,7 +126,11 @@ background: linear-gradient(14deg, rgba(166,166,166,1) 0%, rgba(111,115,114,1) 2
 }
 
 .box3::before {
-  background: linear-gradient(14deg, rgba(191,191,189,1) 32%, rgba(111,115,114,1) 100%);
+  background: linear-gradient(
+    14deg,
+    rgba(191, 191, 189, 1) 32%,
+    rgba(111, 115, 114, 1) 100%
+  );
 }
 
 .box3:hover::before {
