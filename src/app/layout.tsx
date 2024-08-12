@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Crimson_Pro } from 'next/font/google'
 import './globals.css'
+import Header from '@/components/organism/Header/Header'
+import Footer from '@/components/organism/Footer/Footer'
 
 const crimsonPro = Crimson_Pro({
   subsets: ['latin'],
@@ -20,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${crimsonPro.className} bg-primary-500`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

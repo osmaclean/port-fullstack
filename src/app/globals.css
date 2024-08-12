@@ -22,3 +22,109 @@ body {
 .textShadow {
   text-shadow: 0px 3px 4px rgba(34,37,38,0.4);
 }
+
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 1s ease-in-out;
+}
+
+.background {
+  background: linear-gradient(354deg, rgba(34,37,38,1) 0%, rgba(56,62,64,1) 35%, rgba(111,115,114,1) 70%, rgba(166,166,166,1) 100%);
+}
+
+.logo {
+  transform: translate(50%, 50%);
+  transition: all 0.6s ease-in-out;
+}
+
+.icon .svg {
+  transition: all 0.5s ease-in-out;
+}
+
+.box {
+  box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+  transition: all 1s ease-in-out;
+}
+
+.box::before {
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover .svg {
+  fill: white;
+}
+
+.box1 {
+  width: 80%;
+  height: 80%;
+  bottom: -80%;
+  left: -80%;
+}
+
+.box1::before {
+background: linear-gradient(14deg, rgba(166,166,166,1) 0%, rgba(111,115,114,1) 24%, rgba(56,62,64,1) 60%, rgba(34,37,38,1) 100%);
+}
+
+.box1:hover::before {
+  opacity: 1;
+}
+
+.box1:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box2 {
+  width: 60%;
+  height: 60%;
+  bottom: -60%;
+  left: -60%;
+  transition-delay: 0.2s;
+}
+
+.box2::before {
+  background: linear-gradient(14deg, rgba(255,255,255,1) 0%, rgba(14,118,168,1) 100%);
+}
+
+.box2:hover::before {
+  opacity: 1;
+}
+
+.box2:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box3 {
+  width: 40%;
+  height: 40%;
+  bottom: -40%;
+  left: -40%;
+  transition-delay: 0.4s;
+}
+
+.box3::before {
+  background: linear-gradient(14deg, rgba(191,191,189,1) 32%, rgba(111,115,114,1) 100%);
+}
+
+.box3:hover::before {
+  opacity: 1;
+}
+
+.box3:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .box {
+  bottom: -1px;
+  left: -1px;
+}
+
+.card:hover .logo {
+  transform: translate(0, 0);
+  bottom: 20px;
+  right: 20px;
+}

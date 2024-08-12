@@ -34,6 +34,9 @@ const config: Config = {
         heathergreen: ['Heathergreen', 'sans-serif'],
         firacode: ['Fira Code', 'monospace'],
       },
+      borderRadius: {
+        cardSocial: '10% 13% 42% 0%/10% 12% 75% 0%',
+      },
     },
   },
   plugins: [],
