@@ -1,20 +1,44 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/styles/globals.css',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      animation: {
+        'loop-scroll': 'loop-scroll 30s linear infinite',
+        'hover-card': 'hover-card 1s ease 0s normal none',
+      },
+      keyframes: {
+        'loop-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'hover-card': {
+          from: { transform: 'scaleX(0.4)' },
+          to: { transform: 'scaleX(1)' },
+        },
+      },
+      colors: {
+        'primary-100': '#BFBFBD',
+        'primary-200': '#A6A6A6',
+        'primary-300': '#6F7372',
+        'primary-400': '#383E40',
+        'primary-500': '#222526',
+      },
+      fontFamily: {
+        heathergreen: ['Heathergreen', 'sans-serif'],
+        firacode: ['Fira Code', 'monospace'],
+      },
+      borderRadius: {
+        cardSocial: '10% 13% 42% 0%/10% 12% 75% 0%',
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
