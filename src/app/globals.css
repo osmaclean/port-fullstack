@@ -18,3 +18,7 @@ body {
     transform: rotate(180deg);
   }
 }
+
+.textShadow {
+  text-shadow: 0px 3px 4px rgba(34,37,38,0.4);
+}
