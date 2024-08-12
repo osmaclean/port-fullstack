@@ -18,7 +18,7 @@
 }
 
 body {
-  @apply font-heathergreen font-firacode;
+  @apply font-heathergreen;
 }
 
 @layer utilities {
