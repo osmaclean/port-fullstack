@@ -1,19 +1,22 @@
 import Social from '@/components/molecules/Social/Social'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
   return (
     <footer className="border-t-[16px] border-l-4 flex flex-col items-center justify-center gap-4 border-r-4 pt-10 border-primary-100">
       <div className="flex justify-center flex-col items-center gap-8">
-        <Image
-          alt="Maclean Logo"
-          aria-label="Maclean Logo"
-          src={'/logoHero.png'}
-          width={199}
-          height={343}
-          className="w-8"
-        />
+        <Link href={'/'}>
+          <Image
+            alt="Maclean Logo"
+            aria-label="Maclean Logo"
+            src={'/logoHero.png'}
+            width={199}
+            height={343}
+            className="w-8"
+          />
+        </Link>
 
         <Social />
 
@@ -27,11 +30,11 @@ export default function Footer() {
         <nav className="text-primary-100 text-sm">
           <ul className="flex justify-center items-center gap-2">
             <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              Home
+              <Link href={'/'}>Home</Link>
             </li>
             |
             <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              About Me
+              <Link href={'/about-me'}>About Me</Link>
             </li>
             |
             <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
