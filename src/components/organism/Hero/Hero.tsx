@@ -18,7 +18,10 @@ export default function Hero() {
       />
       <section className="px-4 flex w-full flex-col items-center justify-center">
         <div className="flex items-center w-full justify-between">
-          <h1 className="font-heathergreen w-[60%] uppercase font-normal text-7xl text-primary-100">
+          <h1
+            style={{ fontFamily: 'var(--font-heathergreen)' }}
+            className="w-[60%] uppercase font-normal text-7xl text-primary-100"
+          >
             fullstack developer
           </h1>
           <Image
