@@ -8,17 +8,8 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Heathergreen";
-  src:
-    url("/fonts/Heathergreen.woff2") format("woff2"),
-    url("/fonts/Heathergreen.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  @apply font-heathergreen;
+:root {
+  --font-heathergreen: 'Heathergreen', sans-serif;
 }
 
 @layer utilities {
