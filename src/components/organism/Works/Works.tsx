@@ -1,6 +1,6 @@
 'use client'
 
-import { WorkProjectCard } from '../../../mock/stacks.mock'
+import { WorkProjectCard } from '../../../mock/projects.mock'
 import React, { Fragment } from 'react'
 import Image from 'next/image'
 import WorkCard from '@/components/molecules/WorkCard/WorkCard'
