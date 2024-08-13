@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight } from 'phosphor-react'
+import { heathergreen } from '@/app/layout'
 import Image from 'next/image'
 import React from 'react'
 import Scroll from '@/components/molecules/Scroll/Scroll'
@@ -19,8 +20,7 @@ export default function Hero() {
       <section className="px-4 flex w-full flex-col items-center justify-center">
         <div className="flex items-center w-full justify-between">
           <h1
-            style={{ fontFamily: 'var(--font-heathergreen)' }}
-            className="w-[60%] uppercase font-normal text-7xl text-primary-100"
+            className={`w-[60%] uppercase font-normal text-7xl text-primary-100 ${heathergreen.className}`}
           >
             fullstack developer
           </h1>

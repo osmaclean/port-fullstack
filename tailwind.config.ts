@@ -34,7 +34,8 @@ const config: Config = {
         cardSocial: '10% 13% 42% 0%/10% 12% 75% 0%',
       },
       fontFamily: {
-        heathergreen: ['--font-heathergreen'],
+        anton: ['--font-anton'],
+        crimsonPro: ['--font-crimsonPro'],
       },
     },
   },
