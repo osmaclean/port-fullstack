@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { Crimson_Pro } from 'next/font/google'
 import Header from '@/components/organism/Header/Header'
 import Footer from '@/components/organism/Footer/Footer'
