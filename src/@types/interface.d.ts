@@ -4,6 +4,13 @@ export interface StackProps {
   alt: string
 }
 
+export interface AllStackProps {
+  imgPath: string
+  ariaLabel: string
+  alt: string
+  title: string
+}
+
 export interface WorkProjectCardType {
   stacks: StackProps[]
   title: string
