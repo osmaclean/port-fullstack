@@ -30,11 +30,11 @@ const config: Config = {
         'primary-400': '#383E40',
         'primary-500': '#222526',
       },
-      fontFamily: {
-        heathergreen: ['Heathergreen', 'sans-serif'],
-      },
       borderRadius: {
         cardSocial: '10% 13% 42% 0%/10% 12% 75% 0%',
+      },
+      fontFamily: {
+        heathergreen: ['--font-heathergreen'],
       },
     },
   },
