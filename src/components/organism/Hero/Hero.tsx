@@ -52,7 +52,10 @@ export default function Hero() {
               <span className="absolute delay-300 top-0 left-0 w-full bg-primary-100 duration-500 group-hover:translate-y-full h-full"></span>
             </Link>
 
-            <button className="cursor-pointer relative group overflow-hidden border-2 px-2 w-24 mt-1 border-primary-100">
+            <Link
+              href={'/contact'}
+              className="cursor-pointer relative group overflow-hidden border-2 px-2 w-24 mt-1 border-primary-100"
+            >
               <span className="font-bold flex items-center justify-center gap-2 text-primary-500 text-xs py-[2px] relative z-10 group-hover:text-primary-100 duration-500">
                 Contact
                 <ArrowRight size={16} />
@@ -62,7 +65,7 @@ export default function Hero() {
 
               <span className="absolute top-0 left-0 w-full bg-primary-100 duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
               <span className="absolute delay-300 top-0 left-0 w-full bg-primary-100 duration-500 group-hover:translate-y-full h-full"></span>
-            </button>
+            </Link>
           </div>
 
           <span className="text-xs flex-1 text-primary-100 text-end">

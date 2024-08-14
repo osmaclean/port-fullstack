@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import {
   ArrowLeft,
   ArrowRight,
@@ -76,7 +77,10 @@ export default function WhatDoIDo() {
         </div>
       </div>
 
-      <button className="cursor-pointer relative group overflow-hidden shadow-md shadow-primary-300 border-2 px-2 w-24 mt-1 border-primary-200">
+      <Link
+        href={'/services'}
+        className="cursor-pointer relative group overflow-hidden shadow-md shadow-primary-300 border-2 px-2 w-24 mt-1 border-primary-200"
+      >
         <span className="font-bold flex items-center justify-center gap-2 text-primary-500 text-xs py-[2px] relative z-10 group-hover:text-primary-300 duration-500">
           View All
           <ArrowRight size={16} />
@@ -86,7 +90,7 @@ export default function WhatDoIDo() {
 
         <span className="absolute top-0 left-0 w-full bg-primary-200 duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
         <span className="absolute delay-300 top-0 left-0 w-full bg-primary-200 duration-500 group-hover:translate-y-full h-full"></span>
-      </button>
+      </Link>
 
       <Image
         alt="Services Section Background"
