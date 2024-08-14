@@ -1,8 +1,10 @@
 'use client'
 
 import { allStacks } from '@/mock/stacks.mock'
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import Image from 'next/image'
+import { DotOutline } from '@phosphor-icons/react'
+import { allEducations } from '@/mock/education.mock'
 
 export default function AboutNav() {
   const [activeIndex, setActiveIndex] = useState<number>(0)
@@ -55,11 +57,66 @@ export default function AboutNav() {
       )}
 
       {activeIndex === 1 && (
-        <p className="text-primary-500 text-center">Experience</p>
+        <div className="text-primary-500 w-full flex flex-col items-start justify-center">
+          <div className="flex items-start w-full justify-start gap-1">
+            <DotOutline size={24} weight="fill" className="text-primary-500" />
+            <div className="flex flex-col items-start justify-center">
+              <h2 className="text-primary-500 font-bold text-sm">
+                Full Stack Developer
+              </h2>
+              <p className="text-primary-300 font-bold text-xs leading-3">
+                ZeusTech | 02/2023 - Atual | Freelancer
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col px-1 items-start w-full justify-start gap-1">
+            <DotOutline size={14} className="text-primary-300" />
+            <DotOutline size={14} className="text-primary-300" />
+            <DotOutline size={14} className="text-primary-300" />
+          </div>
+          <div className="flex items-start w-full justify-start gap-1">
+            <DotOutline size={24} weight="fill" className="text-primary-500" />
+            <div className="flex flex-col items-start justify-center">
+              <h2 className="text-primary-500 font-bold text-sm">
+                Private Teacher
+              </h2>
+              <p className="text-primary-300 font-bold text-xs leading-3">
+                Superprof | 05/2023 - Atual | Autônomo
+              </p>
+            </div>
+          </div>
+        </div>
       )}
 
       {activeIndex === 2 && (
-        <p className="text-primary-500 text-center">Education</p>
+        <div className="text-primary-500 w-full flex flex-col items-start justify-center">
+          {allEducations.map((education, index) => (
+            <Fragment key={index}>
+              <div className="flex items-start w-full justify-start gap-1">
+                <DotOutline
+                  size={24}
+                  weight="fill"
+                  className="text-primary-500"
+                />
+                <div className="flex flex-col flex-1 items-start justify-center">
+                  <h2 className="text-primary-500 font-bold text-sm mt-[1px]">
+                    {education.name}
+                  </h2>
+                  <p className="text-primary-300 font-bold text-xs">
+                    {`(${education.hours}h) | ${education.company}`}
+                  </p>
+                </div>
+              </div>
+              {index !== allEducations.length - 1 && (
+                <div className="flex flex-col px-1 items-start w-full justify-start">
+                  <DotOutline size={14} className="text-primary-300" />
+                  <DotOutline size={14} className="text-primary-300" />
+                  <DotOutline size={14} className="text-primary-300" />
+                </div>
+              )}
+            </Fragment>
+          ))}
+        </div>
       )}
     </div>
   )
