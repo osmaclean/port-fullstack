@@ -57,7 +57,7 @@ export default function Social() {
         </div>
       </Link>
 
-      <Link href={'hhttps://www.linkedin.com/in/osmaclean/'} target="_blank">
+      <Link href={'https://www.linkedin.com/in/osmaclean/'} target="_blank">
         <div className="box box2 absolute p-2 text-right bg-[#ffffff63] border-t-2 border-white border-r-[1px] border-r-white rounded-cardSocial origin-bottom-left before:content-[''] before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0">
           {' '}
           <span className="icon inline-block">

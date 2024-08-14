@@ -38,11 +38,11 @@ export default function Footer() {
             </li>
             |
             <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              Services
+              <Link href={'/services'}>Services</Link>
             </li>
             |
             <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              Contact
+              <Link href={'/contact'}>Contact</Link>
             </li>
           </ul>
         </nav>
