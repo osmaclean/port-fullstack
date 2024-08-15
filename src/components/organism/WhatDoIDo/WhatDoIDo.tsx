@@ -26,7 +26,7 @@ export default function WhatDoIDo() {
 
       <div className="w-[60%] bg-primary-500 h-[1px]"></div>
 
-      <div className="flex items-start py-6 justify-center gap-2 w-full px-4">
+      <div className="flex items-start py-6 justify-center gap-2 w-full px-4 sm-2:px-10">
         <ArrowRight size={20} />
         <DesktopTower size={20} />
         <div className="flex flex-col flex-1 items-start justify-start">
@@ -46,7 +46,7 @@ export default function WhatDoIDo() {
         <div className="w-[45%] bg-primary-500 h-[1px]"></div>
       </div>
 
-      <div className="flex-row-reverse flex items-start py-6 justify-center gap-2 w-full px-4">
+      <div className="flex-row-reverse flex items-start py-6 justify-center gap-2 w-full px-4 sm-2:px-10">
         <ArrowLeft size={20} />
         <Palette size={20} />
         <div className="flex flex-col flex-1 items-end justify-end">
@@ -63,7 +63,7 @@ export default function WhatDoIDo() {
         <div className="w-[45%] bg-primary-500 h-[1px]"></div>
       </div>
 
-      <div className="flex items-start py-6 justify-center gap-2 w-full px-4">
+      <div className="flex items-start py-6 justify-center gap-2 w-full px-4 sm-2:px-10">
         <ArrowRight size={20} />
         <Gear size={20} />
         <div className="flex flex-col flex-1 items-start justify-start">

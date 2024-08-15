@@ -4,8 +4,8 @@ import React from 'react'
 
 export default function WorkCard({ card }: WorkProjectCardProps) {
   return (
-    <div className="border-b border-primary-300 w-full px-4 py-8 flex flex-col items-start justify-center gap-4">
-      <h1 className="text-2xl font-bold w-1/2 leading-5 text-primary-100 uppercase">
+    <div className="border-b border-primary-300 w-full max-w-full px-4 sm-0:px-6 sm-2:px-10 py-8 flex flex-col items-center justify-center gap-4">
+      <h1 className="text-2xl w-full text-left font-bold leading-5 text-primary-100 uppercase">
         {card.title}
       </h1>
 
@@ -29,8 +29,8 @@ export default function WorkCard({ card }: WorkProjectCardProps) {
           height={625}
           className="w-full h-full object-cover"
         />
-        <div className="w-[60%] hidden group-hover:flex group-hover:animate-hover-card items-center justify-center flex-col absolute left-0 h-full top-0">
-          <div className="w-full relative h-full bg-primary-100 p-1">
+        <div className="max-w-36 hidden group-hover:flex group-hover:animate-hover-card items-center justify-center flex-col absolute left-0 h-full top-0">
+          <div className="w-full relative h-full left-0 bg-primary-100 p-1">
             <Image
               alt="Arrow Card Up"
               aria-label="Arrow Card Up"
@@ -42,7 +42,7 @@ export default function WorkCard({ card }: WorkProjectCardProps) {
             <section className="flex items-center justify-center gap-2 w-ful h-full flex-col">
               <h1 className="text-base font-extrabold uppercase">stacks</h1>
 
-              <div className="flex items-center gap-2 pb-2 flex-wrap justify-center w-full">
+              <div className="flex justify-center items-center flex-wrap gap-2 pb-2 w-full px-2">
                 {card.stacks.map((stack, index) => (
                   <Image
                     key={index}
