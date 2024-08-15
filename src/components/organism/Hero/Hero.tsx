@@ -9,16 +9,18 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center py-8 gap-4 justify-center">
-      <Image
-        alt="Image Hero Up"
-        aria-label="Image Hero Up"
-        src={'/heroUp.png'}
-        width={280}
-        height={14}
-        className="w-full"
-      />
-      <section className="px-4 flex w-full flex-col items-center justify-center">
+    <section className="flex flex-col w-full items-center py-8 gap-4 justify-center select-none">
+      <div className="flex items-center justify-center w-full px-4 sm-2:px-10">
+        <Image
+          alt="Image Hero Down"
+          aria-label="Image Hero Down"
+          src={'/lineUp.png'}
+          width={1440}
+          height={8}
+          className="w-full"
+        />
+      </div>
+      <section className="px-4 flex w-full flex-col items-center justify-center sm-2:px-10">
         <div className="flex items-center w-full justify-between">
           <h1
             className={`w-[60%] uppercase font-normal text-7xl text-primary-100 ${heathergreen.className}`}
@@ -29,8 +31,8 @@ export default function Hero() {
             alt="Image Hero Logo"
             aria-label="Image Hero Logo"
             src={'/logoHero.png'}
-            width={199}
-            height={341.57}
+            width={1440}
+            height={8}
             className="w-20"
           />
         </div>
@@ -75,14 +77,16 @@ export default function Hero() {
           </span>
         </div>
       </section>
-      <Image
-        alt="Image Hero Down"
-        aria-label="Image Hero Down"
-        src={'/heroDown.png'}
-        width={280}
-        height={14}
-        className="w-full"
-      />
+      <div className="flex items-center justify-center w-full px-4 sm-2:px-10">
+        <Image
+          alt="Image Hero Down"
+          aria-label="Image Hero Down"
+          src={'/lineUp.png'}
+          width={1440}
+          height={8}
+          className="w-full"
+        />
+      </div>
 
       <Scroll />
     </section>

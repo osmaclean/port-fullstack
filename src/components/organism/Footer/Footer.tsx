@@ -21,7 +21,7 @@ export default function Footer() {
         <Social />
 
         <div className="flex flex-col justify-center items-center gap-2">
-          <h1 className="text-primary-100 font-medium text-sm text-center">
+          <h1 className="text-primary-100 px-4 font-medium text-sm text-center">
             (11) 98273-2631 | contatolucasmaclean@gmail.com
           </h1>
           <div className="w-[90%] bg-primary-100 h-[1px]"></div>

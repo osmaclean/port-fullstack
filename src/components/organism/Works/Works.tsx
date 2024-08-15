@@ -8,7 +8,7 @@ import Scroll from '@/components/molecules/Scroll/Scroll'
 
 export default function Works() {
   return (
-    <section className="flex w-full pb-6 flex-col gap-6 items-center justify-center border-t-[1px] border-primary-100">
+    <section className="flex w-full pb-6 select-none flex-col gap-6 items-center justify-center border-t-[1px] border-primary-100">
       <div className="overflow-hidden w-full flex gap-4 whitespace-nowrap">
         <div className="items-center min-w-full justify-center gap-2 animate-loop-scroll flex">
           {Array.from({ length: 40 }).map((_, i) => (
@@ -40,7 +40,7 @@ export default function Works() {
         </div>
       </div>
 
-      <section className="w-full px-4">
+      <section className="w-full px-4 sm-1:px-10">
         <div className="border border-b-0 border-primary-300 w-full">
           {WorkProjectCard.map((card, index) => (
             <WorkCard key={index} card={card} />

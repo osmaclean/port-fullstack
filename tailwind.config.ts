@@ -33,9 +33,10 @@ const config: Config = {
       borderRadius: {
         cardSocial: '10% 13% 42% 0%/10% 12% 75% 0%',
       },
-      fontFamily: {
-        anton: ['--font-anton'],
-        crimsonPro: ['--font-crimsonPro'],
+      screens: {
+        'sm-0': { min: '299px' },
+        'sm-1': { min: '330px' },
+        'sm-2': { min: '390px' },
       },
     },
   },
