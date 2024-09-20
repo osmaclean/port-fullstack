@@ -16,11 +16,11 @@ export default function Social() {
               xmlns="http://www.w3.org/2000/svg"
               className="svg w-5 h-5 fill-white"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 {' '}
@@ -29,9 +29,9 @@ export default function Social() {
                 <g
                   id="Page-1"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 >
                   {' '}
                   <g
@@ -66,12 +66,12 @@ export default function Social() {
               viewBox="-5.5 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+              <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
 
               <g id="SVGRepo_iconCarrier">
@@ -84,8 +84,8 @@ export default function Social() {
         </div>
       </Link>
       <Link
-        href={'../../../doc/Curriculum-FullStack-LucasMaclean.pdf'}
-        download={'Curriculum-FullStack-LucasMaclean.pdf'}
+        href={'../../../doc/CV-LucasMaclean.pdf'}
+        download={'CV-LucasMaclean.pdf'}
         target="_blank"
       >
         <div className="box box3 absolute p-2 text-right bg-[#ffffff63] border-t-2 border-white border-r-[1px] border-r-white rounded-cardSocial origin-bottom-left before:content-[''] before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0">
@@ -95,11 +95,11 @@ export default function Social() {
               xmlns="http://www.w3.org/2000/svg"
               className="svg w-5 h-5 fill-white"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 {' '}

@@ -1,5 +1,6 @@
 import { WorkProjectCardProps } from '@/@types/interface'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function WorkCard({ card }: WorkProjectCardProps) {
@@ -61,22 +62,27 @@ export default function WorkCard({ card }: WorkProjectCardProps) {
               <h1 className="text-base font-extrabold uppercase">links</h1>
 
               <div className="flex justify-center items-center gap-4">
-                <Image
-                  alt="Github Icon"
-                  aria-label="Github Icon"
-                  src="/github.png"
-                  width={56}
-                  height={56}
-                  className="w-5"
-                />
-                <Image
-                  alt="WebSite Icon"
-                  aria-label="WebSite Icon"
-                  src="/website.png"
-                  width={56}
-                  height={56}
-                  className="w-4"
-                />
+                {card.title !== 'Convert3D Pro' &&
+                  card.title !== 'Kleitow Moreira' && (
+                    <Image
+                      alt="Github Icon"
+                      aria-label="Github Icon"
+                      src="/github.png"
+                      width={56}
+                      height={56}
+                      className="w-5"
+                    />
+                  )}
+                <Link href={'#'} target="_blank">
+                  <Image
+                    alt="WebSite Icon"
+                    aria-label="WebSite Icon"
+                    src="/website.png"
+                    width={56}
+                    height={56}
+                    className="w-4"
+                  />
+                </Link>
               </div>
             </section>
             <Image

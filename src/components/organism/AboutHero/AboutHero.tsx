@@ -5,7 +5,7 @@ import React from 'react'
 export default function AboutHero() {
   return (
     <>
-      <div className="flex w-full overflow-hidden items-start justify-center text-primary-100">
+      <div className="flex w-full relative overflow-hidden items-start justify-center text-primary-100">
         <div className="flex flex-1 flex-col items-start justify-center gap-4 pl-4">
           <h1 className={`${heathergreen.className} uppercase text-5xl`}>
             About Me
@@ -16,7 +16,7 @@ export default function AboutHero() {
             Mecânica Mundial.
           </p>
         </div>
-        <div className="flex flex-col -mr-8 items-end justify-center h-full">
+        <div className="flex flex-col  -mr-8 items-end justify-center h-full">
           <Image
             alt="Lucas Maclean Image"
             aria-label="Lucas Maclean Image"

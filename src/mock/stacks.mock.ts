@@ -2,46 +2,46 @@ import { AllStackProps, StackProps } from '@/@types/interface'
 
 export const stacksKleitow: StackProps[] = [
   {
-    imgPath: '/allStacks/stacksKleitow/fastify.png',
+    imgPath: '/allStacks/fastify.png',
     ariaLabel: 'Fastify Icon',
     alt: 'Fastify Icon',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/mysql.png',
+    imgPath: '/allStacks/mysql.png',
     ariaLabel: 'MySQL Icon',
     alt: 'MySQL Icon',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/node.png',
+    imgPath: '/allStacks/node.png',
     ariaLabel: 'Node Icon',
     alt: 'Node Icon',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/prisma.png',
+    imgPath: '/allStacks/prisma.png',
     ariaLabel: 'Prisma Icon',
     alt: 'Prisma Icon',
   },
 
   {
-    imgPath: '/allStacks/stacksKleitow/react.png',
+    imgPath: '/allStacks/react.png',
     ariaLabel: 'React Icon',
     alt: 'React Icon',
   },
 
   {
-    imgPath: '/allStacks/stacksKleitow/tailwind.png',
+    imgPath: '/allStacks/tailwind.png',
     ariaLabel: 'Tailwind Icon',
     alt: 'Tailwind Icon',
   },
 
   {
-    imgPath: '/allStacks/stacksKleitow/ts.png',
+    imgPath: '/allStacks/ts.png',
     ariaLabel: 'TypeScript Icon',
     alt: 'TypeScript Icon',
   },
 
   {
-    imgPath: '/allStacks/stacksKleitow/semantic.png',
+    imgPath: '/allStacks/semantic.png',
     ariaLabel: 'Semantic Icon',
     alt: 'Semantic Icon',
   },
@@ -49,35 +49,58 @@ export const stacksKleitow: StackProps[] = [
 
 export const stacksMar: StackProps[] = [
   {
-    imgPath: '/allStacks/stacksMar/tailwind.png',
+    imgPath: '/allStacks/tailwind.png',
     ariaLabel: 'Tailwind Icon',
     alt: 'Tailwind Icon',
   },
   {
-    imgPath: '/allStacks/stacksMar/react.png',
+    imgPath: '/allStacks/react.png',
     ariaLabel: 'React Icon',
     alt: 'React Icon',
   },
   {
-    imgPath: '/allStacks/stacksMar/ts.png',
+    imgPath: '/allStacks/ts.png',
     ariaLabel: 'TypeScript Icon',
     alt: 'TypeScript Icon',
   },
 ]
 
-export const stacksIgnite: StackProps[] = [
+export const stacksConvert3D: StackProps[] = [
   {
-    imgPath: '/allStacks/stacksIgnite/styled.png',
-    ariaLabel: 'Styled Components Icon',
-    alt: 'Styled Components Icon',
+    imgPath: '/allStacks/tailwind.png',
+    ariaLabel: 'Tailwind Icon',
+    alt: 'Tailwind Icon',
   },
   {
-    imgPath: '/allStacks/stacksIgnite/react.png',
+    imgPath: '/allStacks/react.png',
     ariaLabel: 'React Icon',
     alt: 'React Icon',
   },
   {
-    imgPath: '/allStacks/stacksIgnite/ts.png',
+    imgPath: '/allStacks/ts.png',
+    ariaLabel: 'TypeScript Icon',
+    alt: 'TypeScript Icon',
+  },
+  {
+    imgPath: '/allStacks/php.png',
+    ariaLabel: 'PHP Icon',
+    alt: 'PHP Icon',
+  },
+]
+
+export const stacksIgnite: StackProps[] = [
+  {
+    imgPath: '/allStacks/styled.png',
+    ariaLabel: 'Styled Components Icon',
+    alt: 'Styled Components Icon',
+  },
+  {
+    imgPath: '/allStacks/react.png',
+    ariaLabel: 'React Icon',
+    alt: 'React Icon',
+  },
+  {
+    imgPath: '/allStacks/ts.png',
     ariaLabel: 'TypeScript Icon',
     alt: 'TypeScript Icon',
   },
@@ -85,37 +108,37 @@ export const stacksIgnite: StackProps[] = [
 
 export const allStacks: AllStackProps[] = [
   {
-    imgPath: '/allStacks/stacksKleitow/fastify.png',
+    imgPath: '/allStacks/fastify.png',
     ariaLabel: 'Fastify Icon',
     alt: 'Fastify Icon',
     title: 'Fastify',
   },
   {
-    imgPath: '/allStacks/stacksIgnite/react.png',
+    imgPath: '/allStacks/react.png',
     ariaLabel: 'React Icon',
     alt: 'React Icon',
     title: 'React.js',
   },
   {
-    imgPath: '/allStacks/stacksIgnite/ts.png',
+    imgPath: '/allStacks/ts.png',
     ariaLabel: 'TypeScript Icon',
     alt: 'TypeScript Icon',
     title: 'TypeScript',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/mysql.png',
+    imgPath: '/allStacks/mysql.png',
     ariaLabel: 'MySQL Icon',
     alt: 'MySQL Icon',
     title: 'MySQL',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/node.png',
+    imgPath: '/allStacks/node.png',
     ariaLabel: 'Node Icon',
     alt: 'Node Icon',
     title: 'Node.js',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/prisma.png',
+    imgPath: '/allStacks/prisma.png',
     ariaLabel: 'Prisma Icon',
     alt: 'Prisma Icon',
     title: 'Prisma',
@@ -194,7 +217,7 @@ export const allStacks: AllStackProps[] = [
     title: 'Responsividade',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/tailwind.png',
+    imgPath: '/allStacks/tailwind.png',
     ariaLabel: 'Tailwind Icon',
     alt: 'Tailwind Icon',
     title: 'Tailwind',
@@ -212,13 +235,13 @@ export const allStacks: AllStackProps[] = [
     title: 'SQLite',
   },
   {
-    imgPath: '/allStacks/stacksIgnite/styled.png',
+    imgPath: '/allStacks/styled.png',
     ariaLabel: 'Styled Components Icon',
     alt: 'Styled Components Icon',
     title: 'Styled Components',
   },
   {
-    imgPath: '/allStacks/stacksKleitow/semantic.png',
+    imgPath: '/allStacks/semantic.png',
     ariaLabel: 'Semantic Icon',
     alt: 'Semantic Icon',
     title: 'Semantic',
