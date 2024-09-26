@@ -1,11 +1,13 @@
 'use client'
 
-import { InputProps } from '@/@types/interface'
+import 'react-toastify/dist/ReactToastify.css'
+
 import { ArrowRight } from '@phosphor-icons/react'
 import { Fragment, useCallback, useState } from 'react'
 import { toast, ToastContainer, Zoom } from 'react-toastify'
+
+import { InputProps } from '@/@types/interface'
 import Input from '@/components/molecules/Input/Input'
-import 'react-toastify/dist/ReactToastify.css'
 
 const inputContent: InputProps[] = [
   {
@@ -96,7 +98,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-primary-100 w-full px-4 py-6 flex flex-col items-start justify-center gap-4"
+      className="flex w-full flex-col items-start justify-center gap-4 bg-primary-100 px-4 py-6"
     >
       <ToastContainer />
       {inputContent.map((content, index) => (
@@ -111,7 +113,7 @@ export default function ContactForm() {
 
       <label
         htmlFor="message"
-        className="flex flex-col w-full items-start justify-center gap-1 text-primary-500 font-medium"
+        className="flex w-full flex-col items-start justify-center gap-1 font-medium text-primary-500"
       >
         Message*
         <textarea
@@ -121,23 +123,23 @@ export default function ContactForm() {
           placeholder="Your message here..."
           onChange={handleChange}
           value={formData.message || ''}
-          className="placeholder:text-primary-300 text-sm bg-primary-500 shadow-sm shadow-primary-500 text-primary-100 px-4 py-1 w-full resize-y"
+          className="w-full resize-y bg-primary-500 px-4 py-1 text-sm text-primary-100 shadow-sm shadow-primary-500 placeholder:text-primary-300"
         ></textarea>
       </label>
 
       <button
         type="submit"
-        className="cursor-pointer relative group overflow-hidden shadow-md shadow-primary-300 border-2 px-2 w-24 mt-1 border-primary-200"
+        className="group relative mt-1 w-24 cursor-pointer overflow-hidden border-2 border-primary-200 px-2 shadow-md shadow-primary-300"
       >
-        <span className="font-bold flex items-center justify-center gap-2 text-primary-500 text-xs py-[2px] relative z-10 group-hover:text-primary-300 duration-500">
+        <span className="relative z-10 flex items-center justify-center gap-2 py-[2px] text-xs font-bold text-primary-500 duration-500 group-hover:text-primary-300">
           Send
           <ArrowRight size={16} />
         </span>
-        <span className="absolute top-0 left-0 w-full bg-primary-200 duration-500 group-hover:-translate-x-full h-full"></span>
-        <span className="absolute top-0 left-0 w-full bg-primary-200 duration-500 group-hover:translate-x-full h-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 duration-500 group-hover:-translate-x-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 duration-500 group-hover:translate-x-full"></span>
 
-        <span className="absolute top-0 left-0 w-full bg-primary-200 duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
-        <span className="absolute delay-300 top-0 left-0 w-full bg-primary-200 duration-500 group-hover:translate-y-full h-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 delay-300 duration-500 group-hover:-translate-y-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 delay-300 duration-500 group-hover:translate-y-full"></span>
       </button>
     </form>
   )

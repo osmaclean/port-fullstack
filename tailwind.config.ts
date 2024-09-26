@@ -38,6 +38,7 @@ const config: Config = {
         'primary-300': '#6F7372',
         'primary-400': '#383E40',
         'primary-500': '#222526',
+        'primary-600': 'rgba(0,0,0,0.8)',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -97,6 +98,15 @@ const config: Config = {
         },
         'sm-2': {
           min: '390px',
+        },
+        'sm-3': {
+          min: '425px',
+        },
+        'md-1': {
+          min: '550px',
+        },
+        'md-2': {
+          min: '650px',
         },
       },
     },

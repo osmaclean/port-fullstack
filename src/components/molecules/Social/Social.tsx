@@ -3,18 +3,18 @@ import React from 'react'
 
 export default function Social() {
   return (
-    <div className="card text-white text-base relative w-36 h-36 rounded-lg overflow-hidden">
+    <div className="card relative h-36 w-36 overflow-hidden rounded-lg text-base text-white">
       <div className="background absolute inset-0"></div>
-      <div className="logo absolute w-[30%] right-1/2 bottom-1/2">
+      <div className="logo absolute bottom-1/2 right-1/2 w-[30%]">
         Get in Touch
       </div>
       <Link href={'https://github.com/osmaclean'} target="_blank">
-        <div className="box box1 absolute p-2 text-right bg-[#ffffff63] border-t-2 border-white border-r-[1px] border-r-white rounded-cardSocial origin-bottom-left before:content-[''] before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0">
+        <div className="box box1 absolute origin-bottom-left rounded-cardSocial border-r-[1px] border-t-2 border-white border-r-white bg-[#ffffff63] p-2 text-right before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0 before:content-['']">
           <span className="icon inline-block">
             <svg
               viewBox="0 0 30 30"
               xmlns="http://www.w3.org/2000/svg"
-              className="svg w-5 h-5 fill-white"
+              className="svg h-5 w-5 fill-white"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
@@ -58,11 +58,11 @@ export default function Social() {
       </Link>
 
       <Link href={'https://www.linkedin.com/in/osmaclean/'} target="_blank">
-        <div className="box box2 absolute p-2 text-right bg-[#ffffff63] border-t-2 border-white border-r-[1px] border-r-white rounded-cardSocial origin-bottom-left before:content-[''] before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0">
+        <div className="box box2 absolute origin-bottom-left rounded-cardSocial border-r-[1px] border-t-2 border-white border-r-white bg-[#ffffff63] p-2 text-right before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0 before:content-['']">
           {' '}
           <span className="icon inline-block">
             <svg
-              className="svg w-5 h-5 fill-white"
+              className="svg h-5 w-5 fill-white"
               viewBox="-5.5 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -88,12 +88,12 @@ export default function Social() {
         download={'CV-LucasMaclean.pdf'}
         target="_blank"
       >
-        <div className="box box3 absolute p-2 text-right bg-[#ffffff63] border-t-2 border-white border-r-[1px] border-r-white rounded-cardSocial origin-bottom-left before:content-[''] before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0">
+        <div className="box box3 absolute origin-bottom-left rounded-cardSocial border-r-[1px] border-t-2 border-white border-r-white bg-[#ffffff63] p-2 text-right before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0 before:content-['']">
           <span className="icon inline-block">
             <svg
               viewBox="0 0 640 512"
               xmlns="http://www.w3.org/2000/svg"
-              className="svg w-5 h-5 fill-white"
+              className="svg h-5 w-5 fill-white"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g

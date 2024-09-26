@@ -1,8 +1,13 @@
-import { Crimson_Pro } from 'next/font/google'
-import Header from '@/components/organism/Header/Header'
-import Footer from '@/components/organism/Footer/Footer'
-import localFont from 'next/font/local'
 import './globals.css'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+import { Crimson_Pro } from 'next/font/google'
+import localFont from 'next/font/local'
+
+import Footer from '@/components/organism/Footer/Footer'
+import Header from '@/components/organism/Header/Header'
 
 const crimsonPro = Crimson_Pro({
   subsets: ['latin'],

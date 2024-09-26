@@ -1,12 +1,37 @@
-import Social from '@/components/molecules/Social/Social'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { Fragment } from 'react'
+
+import { NavInfosProps } from '@/@types/interface'
+import Social from '@/components/molecules/Social/Social'
+
+const navInfos: NavInfosProps[] = [
+  {
+    label: 'Home',
+    href: '/',
+  },
+  {
+    label: 'Sobre mim',
+    href: '/about',
+  },
+  {
+    label: 'Trabalhos',
+    href: '/jobs',
+  },
+  {
+    label: 'Serviços',
+    href: '/services',
+  },
+  {
+    label: 'Contato',
+    href: '/contact',
+  },
+]
 
 export default function Footer() {
   return (
-    <footer className="border-t-[16px] border-l-4 flex flex-col items-center justify-center gap-4 border-r-4 pt-10 border-primary-100">
-      <div className="flex justify-center flex-col items-center gap-8">
+    <footer className="flex w-full flex-col items-center justify-center gap-4 border-l-4 border-r-4 border-t-[16px] border-primary-100 pt-10">
+      <div className="flex w-full flex-col items-center justify-center gap-8">
         <Link href={'/'}>
           <Image
             alt="Maclean Logo"
@@ -20,34 +45,27 @@ export default function Footer() {
 
         <Social />
 
-        <div className="flex flex-col justify-center items-center gap-2">
-          <h1 className="text-primary-100 px-4 font-medium text-sm text-center">
+        <div className="flex flex-col items-center justify-center gap-2">
+          <h1 className="px-4 text-center text-sm font-medium text-primary-100 sm-3:text-base">
             (11) 98273-2631 | contatolucasmaclean@gmail.com
           </h1>
-          <div className="w-[90%] bg-primary-100 h-[1px]"></div>
+          <div className="h-[1px] w-[90%] bg-primary-100"></div>
         </div>
 
-        <nav className="text-primary-100 text-sm">
-          <ul className="flex justify-center items-center gap-2">
-            <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              <Link href={'/'}>Home</Link>
-            </li>
-            |
-            <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              <Link href={'/about-me'}>About Me</Link>
-            </li>
-            |
-            <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              <Link href={'/services'}>Services</Link>
-            </li>
-            |
-            <li className="border-t border-b border-primary-500 hover:border-b-primary-100 duration-300 hover:rounded-bl-sm hover:rounded-br-sm">
-              <Link href={'/contact'}>Contact</Link>
-            </li>
+        <nav className="text-xs text-primary-100 sm-3:text-sm">
+          <ul className="flex flex-wrap items-center justify-center gap-2">
+            {navInfos.map((item, index) => (
+              <Fragment key={index}>
+                <li className="border-b border-t border-primary-500 duration-300 hover:rounded-bl-sm hover:rounded-br-sm hover:border-b-primary-100">
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+                {item.label !== 'Contato' && <span>|</span>}
+              </Fragment>
+            ))}
           </ul>
         </nav>
 
-        <div className="bg-primary-100 text-primary-500 w-full text-xs inline-block px-8 py-1 text-center">
+        <div className="inline-block w-full bg-primary-100 px-8 py-1 text-center text-xs text-primary-500">
           Designed and built by{' '}
           <span className="text-primary-300">Lucas Maclean</span> with{' '}
           <span className="text-primary-300">Love</span> &{' '}

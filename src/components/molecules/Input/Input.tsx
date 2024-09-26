@@ -1,7 +1,8 @@
 'use client'
 
-import { InputContentProps } from '@/@types/interface'
 import React from 'react'
+
+import { InputContentProps } from '@/@types/interface'
 
 export default function Input({ content, onChange, value }: InputContentProps) {
   const handlePhoneMask = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,7 +23,7 @@ export default function Input({ content, onChange, value }: InputContentProps) {
   return (
     <label
       htmlFor={content.htmlFor}
-      className="flex flex-col w-full items-start justify-center gap-1 text-primary-500 font-medium"
+      className="flex w-full flex-col items-start justify-center gap-1 font-medium text-primary-500"
     >
       {content.label}
 
@@ -34,7 +35,7 @@ export default function Input({ content, onChange, value }: InputContentProps) {
         required={content.type !== 'tel'}
         autoComplete="off"
         value={value}
-        className="placeholder:text-primary-300 text-sm bg-primary-500 shadow-sm shadow-primary-500 text-primary-100 px-4 py-1 w-full"
+        className="w-full bg-primary-500 px-4 py-1 text-sm text-primary-100 shadow-sm shadow-primary-500 placeholder:text-primary-300"
       />
     </label>
   )

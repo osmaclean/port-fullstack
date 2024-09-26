@@ -49,7 +49,7 @@ export interface DropDownMenuProps {
   isDrop: boolean
 }
 
-export interface NavHeaderInfosProps {
+export interface NavInfosProps {
   label: string
   href: string
 }

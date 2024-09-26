@@ -9,7 +9,11 @@
 }
 
 :root {
-  --font-heathergreen: 'Heathergreen', sans-serif;
+  --font-heathergreen: "Heathergreen", sans-serif;
+  --swiper-pagination-color: #BFBFBD;
+  --swiper-navigation-color: #BFBFBD;
+  --swiper-pagination-progressbar-bg-color: #222526;
+  --swiper-pagination-progressbar-size: 2px;
 }
 
 @layer utilities {

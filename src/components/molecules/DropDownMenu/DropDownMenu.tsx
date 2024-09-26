@@ -1,23 +1,28 @@
-import { DropDownMenuProps, NavHeaderInfosProps } from '@/@types/interface'
-import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 import { Fragment } from 'react'
 
-const navInfos: NavHeaderInfosProps[] = [
+import { DropDownMenuProps, NavInfosProps } from '@/@types/interface'
+import { Separator } from '@/components/ui/separator'
+
+const navInfos: NavInfosProps[] = [
   {
     label: 'Home',
     href: '/',
   },
   {
-    label: 'About me',
-    href: '/about-me',
+    label: 'Sobre mim',
+    href: '/about',
   },
   {
-    label: 'Services',
+    label: 'Trabalhos',
+    href: '/jobs',
+  },
+  {
+    label: 'Serviços',
     href: '/services',
   },
   {
-    label: 'Contact',
+    label: 'Contato',
     href: '/contact',
   },
 ]
@@ -26,22 +31,22 @@ export default function DropDownMenu({ isDrop }: DropDownMenuProps) {
   return (
     <>
       <nav
-        className={`bg-primary-100 shadow-sm shadow-primary-500 select-none absolute -bottom-[164px] rounded-md right-4 p-2 min-w-20 ${isDrop ? 'flex' : 'hidden'}`}
+        className={`absolute -bottom-52 right-4 min-w-24 select-none rounded-sm bg-primary-100 p-2 shadow-sm shadow-primary-500 ${isDrop ? 'flex' : 'hidden'}`}
       >
-        <ul className="flex flex-col w-full items-center justify-center gap-2">
+        <ul className="flex w-full flex-col items-center justify-center gap-2">
           {navInfos.map((item, index) => (
             <Fragment key={index}>
               <li>
                 <Link
                   href={item.href}
-                  className="border-t border-b border-primary-100 duration-500 hover:border-b-primary-500 hover:rounded-[3px] px-[2px] text-sm"
+                  className="border-b border-t border-primary-100 px-[2px] text-sm duration-500 hover:rounded-[3px] hover:border-b-primary-500"
                 >
                   {item.label}
                 </Link>
               </li>
 
               {index !== navInfos.length - 1 && (
-                <Separator className="bg-primary-300 opacity-70 w-8" />
+                <Separator className="w-8 bg-primary-300 opacity-70" />
               )}
             </Fragment>
           ))}
