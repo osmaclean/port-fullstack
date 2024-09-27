@@ -1,10 +1,19 @@
 {
   "extends": [
-    "@zeustech/eslint-config/next", 
+    "@zeustech/eslint-config/next",
     "next/core-web-vitals"
   ],
   "rules": {
     "camelcase": "off",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
+  "plugins": [
+    "simple-import-sort"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
   }
 }

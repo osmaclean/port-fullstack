@@ -22,6 +22,7 @@ export interface WorkProjectCardType {
   title: string
   labels: string[]
   imgProject: string
+  href: string
 }
 
 export interface WorkProjectCardProps {
@@ -42,4 +43,13 @@ export interface InputContentProps {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => void
   value?: string
+}
+
+export interface DropDownMenuProps {
+  isDrop: boolean
+}
+
+export interface NavInfosProps {
+  label: string
+  href: string
 }

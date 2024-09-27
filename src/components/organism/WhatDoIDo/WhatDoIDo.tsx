@@ -14,89 +14,95 @@ import React from 'react'
 
 export default function WhatDoIDo() {
   return (
-    <section className="bg-primary-100 py-8 relative overflow-hidden text-primary-500 w-full gap-2 flex items-center justify-center flex-col">
-      <div className="flex items-center flex-col justify-center">
-        <h2 className="uppercase textShadow text-xl text-primary-500 font-bold shadow-current">
-          What Do I Do
+    <section className="relative flex w-full flex-col items-center justify-center gap-2 overflow-hidden bg-primary-100 py-8 text-primary-500 md-2:gap-6">
+      <div className="flex flex-col items-center justify-center">
+        <h2 className="textShadow text-xl font-bold uppercase text-primary-500 shadow-current sm-3:text-3xl md-2:text-4xl">
+          O que faço
         </h2>
-        <p className=" textShadow text-sm z-10 -m-2 text-primary-500 font-light shadow-current">
-          Services and Solutions
+        <p className="textShadow z-10 -m-1 text-sm font-light uppercase text-primary-500 shadow-current sm-3:text-base md-2:m-0">
+          Serviços e Soluções
         </p>
       </div>
 
-      <div className="w-[60%] bg-primary-500 h-[1px]"></div>
+      <div className="lg-2:w-[40%] h-[1px] w-[60%] bg-primary-500"></div>
 
-      <div className="flex items-start py-6 justify-center gap-2 w-full px-4 sm-2:px-10">
-        <ArrowRight size={20} />
-        <DesktopTower size={20} />
-        <div className="flex flex-col flex-1 items-start justify-start">
-          <h3 className="text-sm text-primary-500 font-bold">
-            Web Application Development
+      <div className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 flex w-full items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16">
+        <ArrowRight size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
+        <DesktopTower
+          size={20}
+          className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7"
+        />
+        <div className="flex flex-1 flex-col items-start justify-start">
+          <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-2:text-lg">
+            Desenvolvimento de aplicativos Web
           </h3>
-          <span className="text-xs text-primary-500 font-light">
-            Creation of interactive web applications using frameworks and
-            libraries such as React.js on the front-end, and Node.js, Python on
-            the back-end.
+          <span className="text-xs font-light text-primary-500 sm-3:text-sm md-2:text-base md-3:w-[70%]">
+            Criação de aplicativos interativos da Web usando estruturas e
+            bibliotecas, como React.js no front-end e Node.js, Python no no
+            back-end.
           </span>
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-end gap-2">
-        <Code size={16} />
-        <div className="w-[45%] bg-primary-500 h-[1px]"></div>
+      <div className="flex w-full items-center justify-end gap-2">
+        <Code size={16} className="sm-3:h-5 sm-3:w-5" />
+        <div className="h-[1px] w-[45%] bg-primary-500"></div>
       </div>
 
-      <div className="flex-row-reverse flex items-start py-6 justify-center gap-2 w-full px-4 sm-2:px-10">
-        <ArrowLeft size={20} />
-        <Palette size={20} />
-        <div className="flex flex-col flex-1 items-end justify-end">
-          <h3 className="text-sm text-primary-500 font-bold">Prototyping</h3>
-          <span className="text-xs text-right text-primary-500 font-light">
-            Development of low and medium fidelity prototypes to validate the
-            flow and user experience within the application.
+      <div className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 flex w-full flex-row-reverse items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16">
+        <ArrowLeft size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
+        <Palette size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
+        <div className="flex flex-1 flex-col items-end justify-end">
+          <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-2:text-lg">
+            Prototipagem
+          </h3>
+          <span className="text-right text-xs font-light text-primary-500 sm-3:text-sm md-2:text-base md-3:w-[70%]">
+            Desenvolvimento de protótipos de baixa e média fidelidade para
+            validar o fluxo e a experiência do usuário no aplicativo.
           </span>
         </div>
       </div>
 
-      <div className="w-full flex flex-row-reverse items-center justify-end gap-2">
-        <Code size={16} />
-        <div className="w-[45%] bg-primary-500 h-[1px]"></div>
+      <div className="flex w-full flex-row-reverse items-center justify-end gap-2">
+        <Code size={16} className="sm-3:h-5 sm-3:w-5" />
+        <div className="h-[1px] w-[45%] bg-primary-500"></div>
       </div>
 
-      <div className="flex items-start py-6 justify-center gap-2 w-full px-4 sm-2:px-10">
-        <ArrowRight size={20} />
-        <Gear size={20} />
-        <div className="flex flex-col flex-1 items-start justify-start">
-          <h3 className="text-sm text-primary-500 font-bold">
-            Testing and Quality Assurance
+      <div className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 flex w-full items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16">
+        <ArrowRight size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
+        <Gear size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
+        <div className="flex flex-1 flex-col items-start justify-start">
+          <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-2:text-lg">
+            Testes e Garantia de Qualidade
           </h3>
-          <span className="text-xs text-primary-500 font-light">
-            Writing and executing unit tests, integration tests and end-to-end
-            tests to ensure software quality and stability.
+          <span className="text-xs font-light text-primary-500 sm-3:text-sm md-2:text-base md-3:w-[70%]">
+            Escrever e executar testes unitários, testes de integração e testes
+            de ponta a ponta para garantir a qualidade e a estabilidade do
+            software.
           </span>
         </div>
       </div>
 
       <Link
         href={'/services'}
-        className="cursor-pointer relative group overflow-hidden shadow-md shadow-primary-300 border-2 px-2 w-24 mt-1 border-primary-200"
+        className="group relative mt-1 w-28 cursor-pointer overflow-hidden border-2 border-primary-200 px-2 shadow-md shadow-primary-300 sm-3:w-32"
       >
-        <span className="font-bold flex items-center justify-center gap-2 text-primary-500 text-xs py-[2px] relative z-10 group-hover:text-primary-300 duration-500">
-          View All
-          <ArrowRight size={16} />
+        <span className="relative z-10 flex items-center justify-center gap-2 py-[2px] text-xs font-bold uppercase text-primary-500 duration-500 group-hover:text-primary-300 sm-3:text-sm">
+          Ver todos
+          <ArrowRight size={16} className="sm-3:h-5 sm-3:w-5" />
         </span>
-        <span className="absolute top-0 left-0 w-full bg-primary-200 duration-500 group-hover:-translate-x-full h-full"></span>
-        <span className="absolute top-0 left-0 w-full bg-primary-200 duration-500 group-hover:translate-x-full h-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 duration-500 group-hover:-translate-x-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 duration-500 group-hover:translate-x-full"></span>
 
-        <span className="absolute top-0 left-0 w-full bg-primary-200 duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
-        <span className="absolute delay-300 top-0 left-0 w-full bg-primary-200 duration-500 group-hover:translate-y-full h-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 delay-300 duration-500 group-hover:-translate-y-full"></span>
+        <span className="absolute left-0 top-0 h-full w-full bg-primary-200 delay-300 duration-500 group-hover:translate-y-full"></span>
       </Link>
 
       <Image
         alt="Services Section Background"
         aria-label="Services Section Background"
         src={'/bg-services.png'}
-        className="w-16 -mr-4 absolute bottom-0 right-0"
+        className="absolute bottom-0 right-0 -mr-4 w-16"
         width={42}
         height={115}
       />
