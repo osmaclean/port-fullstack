@@ -108,6 +108,18 @@ const config: Config = {
         'md-2': {
           min: '650px',
         },
+        'md-3': {
+          min: '768px',
+        },
+        'md-4': {
+          min: '900px',
+        },
+        'lg-1': {
+          min: '1024px',
+        },
+        'lg-2': {
+          min: '1280px',
+        },
       },
     },
   },

@@ -23,8 +23,8 @@ export default function Works() {
         <div className="flex min-w-full animate-loop-scroll items-center justify-center gap-2">
           {Array.from({ length: 40 }).map((_, i) => (
             <Fragment key={i}>
-              <span className="md-1:text-2xl mt-1 flex rotate-180 items-center justify-center text-xl font-bold text-primary-300 opacity-40">
-                WORKS
+              <span className="mt-1 flex rotate-180 items-center justify-center text-xl font-bold uppercase text-primary-300 opacity-40 md-1:text-2xl">
+                projetos
               </span>
               <Image
                 alt="Tag Icon"
@@ -32,10 +32,10 @@ export default function Works() {
                 src={'/tag.png'}
                 width={29}
                 height={19}
-                className="md-1:w-5 w-4"
+                className="w-4 md-1:w-5"
               />
-              <span className="md-1:text-2xl mb-[2px] flex items-center justify-center text-xl font-bold text-primary-100">
-                WORKS
+              <span className="mb-[2px] flex items-center justify-center text-xl font-bold uppercase text-primary-100 md-1:text-2xl">
+                projetos
               </span>
               <Image
                 alt="Tag Icon"
@@ -43,14 +43,14 @@ export default function Works() {
                 src={'/tag.png'}
                 width={29}
                 height={19}
-                className="md-1:w-5 w-4"
+                className="w-4 md-1:w-5"
               />
             </Fragment>
           ))}
         </div>
       </div>
 
-      <section className="md-1:px-16 w-full px-4 sm-1:px-10">
+      <section className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 w-full px-4 sm-1:px-10 md-1:px-16">
         <div className="flex w-full flex-col items-center justify-center border border-b-0 border-primary-300 sm-3:hidden sm-3:flex-row sm-3:flex-wrap sm-3:border-b">
           {WorkProjectCard.map((card, index) => (
             <WorkCard card={card} key={index} />
@@ -64,14 +64,14 @@ export default function Works() {
             delay: 2500,
             disableOnInteraction: true,
           }}
-          spaceBetween={30}
+          spaceBetween={14}
           pagination={{ type: 'progressbar' }}
           className="!z-10 !hidden sm-3:!flex"
         >
           {WorkProjectCard.map((card, index) => (
             <SwiperSlide
               key={index}
-              className="md-2:min-h-96 group relative z-10 min-h-72"
+              className="lg-1:min-h-[400px] group relative z-10 min-h-72 md-2:min-h-96 md-3:w-full"
             >
               <Image
                 src={card.imgProject}
@@ -79,10 +79,10 @@ export default function Works() {
                 aria-label={`${card.title} Image`}
                 width={1000}
                 height={1000}
-                className="md-2:min-h-96 absolute -z-10 min-h-72 w-full object-cover"
+                className="lg-1:min-h-[400px] absolute -z-10 min-h-72 w-full object-cover md-2:min-h-96 md-3:max-h-[720px]"
               />
               <div className="absolute bottom-0 hidden w-full flex-col items-start justify-center gap-2 bg-primary-600 p-4 group-hover:flex">
-                <h1 className="md-2:text-xl font-bold uppercase text-primary-100">
+                <h1 className="font-bold uppercase text-primary-100 md-2:text-xl">
                   {card.title}
                 </h1>
 
@@ -90,7 +90,7 @@ export default function Works() {
                   {card.labels.map((label, index) => (
                     <span
                       key={index}
-                      className="md-2:text-sm bg-primary-100 px-2 text-xs font-medium uppercase text-primary-500"
+                      className="bg-primary-100 px-2 text-xs font-medium uppercase text-primary-500 md-2:text-sm"
                     >
                       {label}
                     </span>
@@ -107,7 +107,7 @@ export default function Works() {
                     className="absolute left-1 top-1 w-5"
                   />
                   <section className="flex h-full flex-col items-center justify-center gap-2">
-                    <h1 className="md-2:text-lg text-base font-extrabold uppercase">
+                    <h1 className="text-base font-extrabold uppercase md-2:text-lg">
                       stacks
                     </h1>
 
@@ -120,14 +120,14 @@ export default function Works() {
                           src={stack.imgPath}
                           width={56}
                           height={56}
-                          className="md-2:w-6 w-5"
+                          className="w-5 md-2:w-6"
                         />
                       ))}
                     </div>
 
                     <div className="h-[1px] w-[80%] bg-primary-500"></div>
 
-                    <h1 className="md-2:text-lg text-base font-extrabold uppercase">
+                    <h1 className="text-base font-extrabold uppercase md-2:text-lg">
                       links
                     </h1>
 
@@ -141,7 +141,7 @@ export default function Works() {
                             src="/github.png"
                             width={56}
                             height={56}
-                            className="md-2:w-6 w-5"
+                            className="w-5 md-2:w-6"
                           />
                         )}
                       <Link href={card.href} target="_blank">
@@ -151,7 +151,7 @@ export default function Works() {
                           src="/website.png"
                           width={56}
                           height={56}
-                          className="md-2:w-5 w-4"
+                          className="w-4 md-2:w-5"
                         />
                       </Link>
                     </div>

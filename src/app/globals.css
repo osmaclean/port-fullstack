@@ -10,8 +10,8 @@
 
 :root {
   --font-heathergreen: "Heathergreen", sans-serif;
-  --swiper-pagination-color: #BFBFBD;
-  --swiper-navigation-color: #BFBFBD;
+  --swiper-pagination-color: #bfbfbd;
+  --swiper-navigation-color: #bfbfbd;
   --swiper-pagination-progressbar-bg-color: #222526;
   --swiper-pagination-progressbar-size: 2px;
 }
@@ -222,5 +222,32 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+body {
+  --sb-track-color: #383e40;
+  --sb-thumb-color: #bfbfbd;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  border: 4px solid #383e40;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }

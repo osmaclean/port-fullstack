@@ -25,11 +25,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#2d3032]">
       <head>
         <title>Lucas Maclean</title>
       </head>
-      <body className={`${crimsonPro.className} bg-primary-500`}>
+      <body
+        className={`${crimsonPro.className} m-auto max-w-[1440px] bg-primary-500`}
+      >
         <Header />
         {children}
         <Footer />
