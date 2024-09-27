@@ -1,11 +1,12 @@
+import React from 'react'
+
 import Scroll from '@/components/molecules/Scroll/Scroll'
 import ContactForm from '@/components/organism/ContactForm/ContactForm'
 import ContactHero from '@/components/organism/ContactHero/ContactHero'
-import React from 'react'
 
 export default function Page() {
   return (
-    <section className="pt-8 w-full">
+    <section className="w-full pt-8">
       <ContactHero />
       <Scroll />
       <ContactForm />
