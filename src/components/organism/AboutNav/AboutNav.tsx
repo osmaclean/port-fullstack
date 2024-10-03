@@ -15,10 +15,10 @@ export default function AboutNav() {
   }
 
   return (
-    <div className="flex w-full select-none flex-col items-center justify-center gap-8 bg-primary-100 p-4">
+    <div className="flex w-full select-none flex-col items-center justify-center gap-8 bg-primary-100 p-4 sm-2:px-10 md-1:px-24 md-3:px-40">
       <nav className="w-full">
-        <ul className="flex w-full items-center justify-between text-sm uppercase">
-          {['stacks', 'experience', 'education'].map((item, index) => (
+        <ul className="flex w-full items-center justify-between text-sm uppercase sm-3:text-base md-3:text-lg">
+          {['stacks', 'experiência', 'educação'].map((item, index) => (
             <li
               key={index}
               onClick={() => handleActiveIndex(index)}
@@ -35,7 +35,7 @@ export default function AboutNav() {
       </nav>
 
       {activeIndex === 0 && (
-        <div className="grid w-full grid-cols-4 gap-4">
+        <div className="grid w-full grid-cols-4 gap-4 md-3:gap-8 md-3:py-4">
           {allStacks.map((stack, index) => (
             <div
               key={index}
@@ -47,9 +47,9 @@ export default function AboutNav() {
                 src={stack.imgPath}
                 width={56}
                 height={56}
-                className="w-6"
+                className="w-6 md-3:w-8"
               />
-              <span className="invisible absolute break-words rounded-md bg-primary-500 px-2 py-[2px] text-center font-bold opacity-0 duration-700 group-hover:visible group-hover:-translate-y-10 group-hover:text-xs group-hover:text-primary-100 group-hover:opacity-100">
+              <span className="invisible absolute break-words rounded-md bg-primary-500 px-2 py-[2px] text-center font-bold opacity-0 duration-700 group-hover:visible group-hover:-translate-y-10 group-hover:text-xs group-hover:text-primary-100 group-hover:opacity-100 md-3:group-hover:text-sm">
                 {stack.title}
               </span>
             </div>
@@ -62,10 +62,10 @@ export default function AboutNav() {
           <div className="flex w-full items-start justify-start gap-1">
             <DotOutline size={24} weight="fill" className="text-primary-500" />
             <div className="flex flex-col items-start justify-center">
-              <h2 className="text-sm font-bold text-primary-500">
-                Full Stack Developer
+              <h2 className="text-sm font-bold text-primary-500 sm-3:text-base">
+                Desenvolvedor Full-stack
               </h2>
-              <p className="text-xs font-bold leading-3 text-primary-300">
+              <p className="text-xs font-bold leading-3 text-primary-300 sm-3:text-sm">
                 ZeusTech | 02/2023 - Atual | Freelancer
               </p>
             </div>
@@ -78,10 +78,10 @@ export default function AboutNav() {
           <div className="flex w-full items-start justify-start gap-1">
             <DotOutline size={24} weight="fill" className="text-primary-500" />
             <div className="flex flex-col items-start justify-center">
-              <h2 className="text-sm font-bold text-primary-500">
-                Private Teacher
+              <h2 className="text-sm font-bold text-primary-500 sm-3:text-base">
+                Professor Particular
               </h2>
-              <p className="text-xs font-bold leading-3 text-primary-300">
+              <p className="text-xs font-bold leading-3 text-primary-300 sm-3:text-sm">
                 Superprof | 05/2023 - Atual | Autônomo
               </p>
             </div>
@@ -100,10 +100,10 @@ export default function AboutNav() {
                   className="text-primary-500"
                 />
                 <div className="flex flex-1 flex-col items-start justify-center">
-                  <h2 className="mt-[1px] text-sm font-bold text-primary-500">
+                  <h2 className="mt-[1px] text-sm font-bold text-primary-500 sm-3:text-base">
                     {education.name}
                   </h2>
-                  <p className="text-xs font-bold text-primary-300">
+                  <p className="text-xs font-bold text-primary-300 sm-3:text-sm">
                     {`(${education.hours}h) | ${education.company}`}
                   </p>
                 </div>

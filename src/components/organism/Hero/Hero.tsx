@@ -11,7 +11,7 @@ import { Separator } from '@/components/ui/separator'
 
 export default function Hero() {
   return (
-    <section className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 flex w-full select-none flex-col items-center justify-center gap-8 px-4 py-8 sm-2:px-10 md-1:px-16">
+    <section className="flex w-full select-none flex-col items-center justify-center gap-8 px-4 py-8 sm-2:px-10 md-1:px-16 md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0">
       <div className="flex w-full items-center justify-center">
         <Separator className="animate-bounce bg-primary-100 opacity-20" />
       </div>
@@ -19,7 +19,7 @@ export default function Hero() {
       <section className="flex w-full flex-col items-center justify-center">
         <div className="-mt-4 flex w-full items-center justify-between">
           <h1
-            className={`textShadowHero md-4:text-[9rem] w-[60%] text-7xl font-normal uppercase text-primary-100 sm-3:text-8xl md-2:text-9xl ${heathergreen.className}`}
+            className={`textShadowHero w-[60%] text-7xl font-normal uppercase text-primary-100 sm-3:text-8xl md-2:text-9xl md-4:text-[9rem] ${heathergreen.className}`}
           >
             desenvolvedor fullstack
           </h1>
@@ -29,7 +29,7 @@ export default function Hero() {
             src={'/logoHero.png'}
             width={1440}
             height={8}
-            className="md-4:w-44 mt-6 w-16 sm-1.1:w-28 sm-3:w-24 md-1:w-28 md-2:w-36 md-3:w-40"
+            className="mt-6 w-16 sm-1.1:w-28 sm-3:w-24 md-1:w-28 md-2:w-36 md-3:w-40 md-4:w-44"
           />
         </div>
 

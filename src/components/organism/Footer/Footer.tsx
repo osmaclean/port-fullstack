@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="flex w-full flex-col items-center justify-center gap-4 border-l-4 border-r-4 border-t-[16px] border-primary-100 pt-10">
       <div className="flex w-full flex-col items-center justify-center gap-8">
-        <div className="md-4:px-32 flex w-full flex-col items-center justify-center gap-8 md-3:flex-row md-3:gap-28">
+        <div className="flex w-full flex-col items-center justify-center gap-8 md-3:flex-row md-3:gap-28 md-4:px-32">
           <Link href={'/'}>
             <Image
               alt="Maclean Logo"
@@ -48,9 +48,9 @@ export default function Footer() {
           <Social />
         </div>
 
-        <Separator className="md-4:w-full hidden w-[80%] bg-primary-100 opacity-50 md-3:flex" />
+        <Separator className="hidden w-[80%] bg-primary-100 opacity-50 md-3:flex md-4:w-full" />
 
-        <div className="md-4:px-4 md-4:justify-between flex w-full flex-col items-center justify-center gap-8 md-3:flex-row">
+        <div className="flex w-full flex-col items-center justify-center gap-8 md-3:flex-row md-4:justify-between md-4:px-4">
           <div className="flex flex-col items-center justify-center gap-2">
             <h1 className="px-4 text-center text-sm font-medium text-primary-100 sm-3:text-base">
               (11) 98273-2631 | contatolucasmaclean@gmail.com
@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="h-[1px] w-[90%] bg-primary-100 md-3:hidden"></div>
           </div>
 
-          <nav className="md-4:text-base text-xs text-primary-100 sm-3:text-sm">
+          <nav className="text-xs text-primary-100 sm-3:text-sm md-4:text-base">
             <ul className="flex flex-wrap items-center justify-center gap-2">
               {navInfos.map((item, index) => (
                 <Fragment key={index}>
@@ -72,7 +72,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="lg-2:text-sm inline-block w-full bg-primary-100 px-8 py-1 text-center text-xs text-primary-500">
+        <div className="inline-block w-full bg-primary-100 px-8 py-1 text-center text-xs text-primary-500 lg-2:text-sm">
           Designed and built by{' '}
           <span className="text-primary-300">Lucas Maclean</span> with{' '}
           <span className="text-primary-300">Love</span> &{' '}

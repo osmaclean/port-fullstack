@@ -5,9 +5,7 @@ export default function Social() {
   return (
     <div className="card relative h-36 w-36 overflow-hidden rounded-lg text-base text-white">
       <div className="background absolute inset-0"></div>
-      <div className="logo absolute bottom-1/2 right-1/2 w-[30%]">
-        Get in Touch
-      </div>
+      <div className="logo absolute bottom-1/2 right-1/2 w-[35%]">Contato</div>
       <Link href={'https://github.com/osmaclean'} target="_blank">
         <div className="box box1 absolute origin-bottom-left rounded-cardSocial border-r-[1px] border-t-2 border-white border-r-white bg-[#ffffff63] p-2 text-right before:absolute before:inset-0 before:rounded-[inherit] before:opacity-0 before:content-['']">
           <span className="icon inline-block">
@@ -84,7 +82,7 @@ export default function Social() {
         </div>
       </Link>
       <Link
-        href={'../../../doc/CV-LucasMaclean.pdf'}
+        href={'/doc/CV-LucasMaclean.pdf'}
         download={'CV-LucasMaclean.pdf'}
         target="_blank"
       >
