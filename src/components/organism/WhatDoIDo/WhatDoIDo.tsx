@@ -24,9 +24,9 @@ export default function WhatDoIDo() {
         </p>
       </div>
 
-      <div className="lg-2:w-[40%] h-[1px] w-[60%] bg-primary-500"></div>
+      <div className="h-[1px] w-[60%] bg-primary-500 lg-2:w-[40%]"></div>
 
-      <div className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 flex w-full items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16">
+      <div className="flex w-full items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16 md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0">
         <ArrowRight size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
         <DesktopTower
           size={20}
@@ -49,7 +49,7 @@ export default function WhatDoIDo() {
         <div className="h-[1px] w-[45%] bg-primary-500"></div>
       </div>
 
-      <div className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 flex w-full flex-row-reverse items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16">
+      <div className="flex w-full flex-row-reverse items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16 md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0">
         <ArrowLeft size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
         <Palette size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
         <div className="flex flex-1 flex-col items-end justify-end">
@@ -68,7 +68,7 @@ export default function WhatDoIDo() {
         <div className="h-[1px] w-[45%] bg-primary-500"></div>
       </div>
 
-      <div className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 flex w-full items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16">
+      <div className="flex w-full items-start justify-center gap-2 px-4 py-6 sm-2:px-10 md-1:px-16 md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0">
         <ArrowRight size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
         <Gear size={20} className="sm-3:h-6 sm-3:w-6 md-2:h-7 md-2:w-7" />
         <div className="flex flex-1 flex-col items-start justify-start">

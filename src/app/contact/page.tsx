@@ -6,7 +6,7 @@ import ContactHero from '@/components/organism/ContactHero/ContactHero'
 
 export default function Page() {
   return (
-    <section className="w-full pt-8">
+    <section className="flex w-full flex-col items-center justify-center pt-8">
       <ContactHero />
       <Scroll />
       <ContactForm />

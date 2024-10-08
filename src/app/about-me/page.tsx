@@ -4,7 +4,7 @@ import AboutNav from '@/components/organism/AboutNav/AboutNav'
 
 export default function Page() {
   return (
-    <section className="w-full pt-8">
+    <section className="flex w-full flex-col items-center justify-center pt-8">
       <AboutHero />
       <Scroll />
       <AboutNav />

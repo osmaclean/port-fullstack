@@ -41,7 +41,7 @@ export default function Header() {
     <header className="relative flex w-full select-none items-center justify-between bg-primary-500">
       <div className="flex w-full items-center justify-between px-4 py-4">
         <Link href={'/'}>
-          <h1 className="md-4:text-2xl text-xs font-normal uppercase text-primary-100 sm-3:text-sm md-3:text-lg">
+          <h1 className="text-xs font-normal uppercase text-primary-100 sm-3:text-sm md-3:text-lg md-4:text-2xl">
             Lucas Maclean
           </h1>{' '}
         </Link>
@@ -57,7 +57,7 @@ export default function Header() {
           <DropDownMenu isDrop={isDrop} />
         </section>
 
-        <nav className="md-4:text-base hidden text-xs text-primary-100 sm-3:text-sm md-3:flex">
+        <nav className="hidden text-xs text-primary-100 sm-3:text-sm md-3:flex md-4:text-base">
           <ul className="flex flex-wrap items-center justify-center gap-2">
             {navInfos.map((item, index) => (
               <Fragment key={index}>
