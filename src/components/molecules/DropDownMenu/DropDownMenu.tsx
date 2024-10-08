@@ -11,7 +11,7 @@ const navInfos: NavInfosProps[] = [
   },
   {
     label: 'Sobre mim',
-    href: '/about',
+    href: '/about-me',
   },
   {
     label: 'Trabalhos',
@@ -31,7 +31,7 @@ export default function DropDownMenu({ isDrop }: DropDownMenuProps) {
   return (
     <>
       <nav
-        className={`absolute -bottom-52 right-4 min-w-24 select-none rounded-sm bg-primary-100 p-2 shadow-sm shadow-primary-500 ${isDrop ? 'flex' : 'hidden'}`}
+        className={`absolute -bottom-52 right-4 z-30 min-w-24 select-none rounded-sm bg-primary-100 p-2 shadow-sm shadow-primary-500 ${isDrop ? 'flex' : 'hidden'}`}
       >
         <ul className="flex w-full flex-col items-center justify-center gap-2">
           {navInfos.map((item, index) => (

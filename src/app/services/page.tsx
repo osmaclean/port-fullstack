@@ -6,7 +6,7 @@ import ServicesHero from '@/components/organism/ServicesHero/ServicesHero'
 
 export default function Page() {
   return (
-    <section className="w-full pt-8">
+    <section className="flex w-full flex-col items-center justify-center pt-8">
       <ServicesHero />
       <Scroll />
       <AllServices />

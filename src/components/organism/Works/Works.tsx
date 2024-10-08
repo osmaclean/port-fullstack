@@ -50,7 +50,7 @@ export default function Works() {
         </div>
       </div>
 
-      <section className="md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0 w-full px-4 sm-1:px-10 md-1:px-16">
+      <section className="w-full px-4 sm-1:px-10 md-1:px-16 md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0">
         <div className="flex w-full flex-col items-center justify-center border border-b-0 border-primary-300 sm-3:hidden sm-3:flex-row sm-3:flex-wrap sm-3:border-b">
           {WorkProjectCard.map((card, index) => (
             <WorkCard card={card} key={index} />
@@ -71,7 +71,7 @@ export default function Works() {
           {WorkProjectCard.map((card, index) => (
             <SwiperSlide
               key={index}
-              className="lg-1:min-h-[400px] group relative z-10 min-h-72 md-2:min-h-96 md-3:w-full"
+              className="group relative z-10 min-h-72 md-2:min-h-96 md-3:w-full lg-1:min-h-[400px]"
             >
               <Image
                 src={card.imgProject}
@@ -79,7 +79,7 @@ export default function Works() {
                 aria-label={`${card.title} Image`}
                 width={1000}
                 height={1000}
-                className="lg-1:min-h-[400px] absolute -z-10 min-h-72 w-full object-cover md-2:min-h-96 md-3:max-h-[720px]"
+                className="absolute -z-10 min-h-72 w-full object-cover md-2:min-h-96 md-3:max-h-[720px] lg-1:min-h-[400px]"
               />
               <div className="absolute bottom-0 hidden w-full flex-col items-start justify-center gap-2 bg-primary-600 p-4 group-hover:flex">
                 <h1 className="font-bold uppercase text-primary-100 md-2:text-xl">
