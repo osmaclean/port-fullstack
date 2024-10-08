@@ -23,7 +23,7 @@ export default function Input({ content, onChange, value }: InputContentProps) {
   return (
     <label
       htmlFor={content.htmlFor}
-      className="flex w-full flex-col items-start justify-center gap-1 font-medium text-primary-500"
+      className="flex w-full flex-col items-start justify-center gap-1 font-medium text-primary-500 md-3:text-lg"
     >
       {content.label}
 
@@ -35,7 +35,7 @@ export default function Input({ content, onChange, value }: InputContentProps) {
         required={content.type !== 'tel'}
         autoComplete="off"
         value={value}
-        className="w-full bg-primary-500 px-4 py-1 text-sm text-primary-100 shadow-sm shadow-primary-500 placeholder:text-primary-300"
+        className="w-full bg-primary-500 px-4 py-1 text-sm text-primary-100 shadow-sm shadow-primary-500 placeholder:text-primary-300 md-3:text-base"
       />
     </label>
   )

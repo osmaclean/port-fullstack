@@ -15,8 +15,8 @@ export default function AboutNav() {
   }
 
   return (
-    <div className="flex w-full select-none flex-col items-center justify-center gap-8 bg-primary-100 p-4 sm-2:px-10 md-1:px-24 md-3:px-40">
-      <nav className="w-full">
+    <div className="flex w-full select-none flex-col items-center justify-center gap-8 bg-primary-100 p-4 sm-2:px-10 md-1:px-24 md-3:px-40 md-4:px-56 lg-1:px-72">
+      <nav className="w-full lg-2:max-w-[520px]">
         <ul className="flex w-full items-center justify-between text-sm uppercase sm-3:text-base md-3:text-lg">
           {['stacks', 'experiência', 'educação'].map((item, index) => (
             <li
@@ -35,7 +35,7 @@ export default function AboutNav() {
       </nav>
 
       {activeIndex === 0 && (
-        <div className="grid w-full grid-cols-4 gap-4 md-3:gap-8 md-3:py-4">
+        <div className="grid w-full grid-cols-4 gap-4 md-3:gap-8 md-3:py-4 lg-2:max-w-[612px]">
           {allStacks.map((stack, index) => (
             <div
               key={index}
@@ -58,7 +58,7 @@ export default function AboutNav() {
       )}
 
       {activeIndex === 1 && (
-        <div className="flex w-full flex-col items-start justify-center text-primary-500">
+        <div className="flex w-full flex-col items-start justify-center text-primary-500 lg-2:max-w-[524px]">
           <div className="flex w-full items-start justify-start gap-1">
             <DotOutline size={24} weight="fill" className="text-primary-500" />
             <div className="flex flex-col items-start justify-center">
@@ -90,7 +90,7 @@ export default function AboutNav() {
       )}
 
       {activeIndex === 2 && (
-        <div className="flex w-full flex-col items-start justify-center text-primary-500">
+        <div className="flex w-full flex-col items-start justify-center text-primary-500 lg-2:max-w-[524px]">
           {allEducations.map((education, index) => (
             <Fragment key={index}>
               <div className="flex w-full items-start justify-start gap-1">
