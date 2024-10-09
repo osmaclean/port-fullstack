@@ -17,16 +17,17 @@ export interface allEducationsProps {
   hours: number
 }
 
-export interface WorkProjectCardType {
+export interface WorkProjectCardHomeType {
   stacks: StackProps[]
   title: string
   labels: string[]
   imgProject: string
-  href: string
+  website: string
+  github?: string
 }
 
-export interface WorkProjectCardProps {
-  card: WorkProjectCardType
+export interface WorkProjectCardHomeProps {
+  card: WorkProjectCardHomeType
 }
 
 export interface InputProps {

@@ -1,12 +1,12 @@
 import Hero from '@/components/organism/Hero/Hero'
 import WhatDoIDo from '@/components/organism/WhatDoIDo/WhatDoIDo'
-import Works from '@/components/organism/Works/Works'
+import WorksHome from '@/components/organism/WorksHome/WorksHome'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Works />
+      <WorksHome />
       <WhatDoIDo />
     </>
   )
