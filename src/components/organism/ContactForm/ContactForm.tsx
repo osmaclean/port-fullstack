@@ -12,7 +12,7 @@ import Input from '@/components/molecules/Input/Input'
 const inputContent: InputProps[] = [
   {
     htmlFor: 'name',
-    label: 'Name*',
+    label: 'Nome*',
     type: 'text',
     name: 'name',
     placeholder: 'Lucas Maclean',
@@ -26,17 +26,17 @@ const inputContent: InputProps[] = [
   },
   {
     htmlFor: 'phone',
-    label: 'Phone',
+    label: 'Telefone',
     type: 'tel',
     name: 'phone',
     placeholder: 'Ex: (11) 97777-7777',
   },
   {
     htmlFor: 'topic',
-    label: 'Topic*',
+    label: 'Assunto*',
     type: 'text',
     name: 'topic',
-    placeholder: 'Ex: Server Development',
+    placeholder: 'Ex: Desenvolvimento de API',
   },
 ]
 
@@ -79,7 +79,7 @@ export default function ContactForm() {
       })
 
       if (response.ok) {
-        notify('Form submitted successfully!', 'success')
+        notify('Formulário enviado!', 'success')
         setFormData({
           name: '',
           email: '',
@@ -88,10 +88,13 @@ export default function ContactForm() {
           message: '',
         })
       } else {
-        notify('Failed to submit form. Please try again later.', 'error')
+        notify(
+          'Falha no envio do formulário. Por favor tente de novo.',
+          'error',
+        )
       }
     } catch (error) {
-      notify('An error occurred. Please try again later.', 'error')
+      notify('Ocorreu um erro. Por favor tente de novo.', 'error')
     }
   }
 
@@ -116,12 +119,12 @@ export default function ContactForm() {
           htmlFor="message"
           className="flex w-full flex-col items-start justify-center gap-1 font-medium text-primary-500 md-3:text-lg"
         >
-          Message*
+          Mensagem*
           <textarea
             name="message"
             id="message"
             rows={7}
-            placeholder="Your message here..."
+            placeholder="Sua mensagem aqui..."
             onChange={handleChange}
             value={formData.message || ''}
             className="w-full resize-y bg-primary-500 px-4 py-1 text-sm text-primary-100 shadow-sm shadow-primary-500 placeholder:text-primary-300 md-3:text-base"
@@ -133,7 +136,7 @@ export default function ContactForm() {
           className="group relative mt-1 w-24 cursor-pointer overflow-hidden border-2 border-primary-200 px-2 shadow-md shadow-primary-300 md-3:w-32"
         >
           <span className="relative z-10 flex items-center justify-center gap-2 py-[2px] text-xs font-bold text-primary-500 duration-500 group-hover:text-primary-300 sm-3:text-sm md-3:text-base">
-            Send
+            Enviar
             <ArrowRight size={16} className="md-3:h-5 md-3:w-5" />
           </span>
           <span className="absolute left-0 top-0 h-full w-full bg-primary-200 duration-500 group-hover:-translate-x-full"></span>

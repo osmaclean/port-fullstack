@@ -10,13 +10,13 @@ export default function ServicesHero() {
           <h1
             className={`${heathergreen.className} text-5xl uppercase sm-3:text-[5rem] md-4:text-[7rem]`}
           >
-            Services and Microservices
+            Serviços e Microsserviços
           </h1>
           <p className="text-xs font-normal sm-3:text-sm md-3:text-base">
-            Discover how custom services and microservices can streamline your
-            processes, increase efficiency and productivity for your business
-            growth. Below, check out the solutions I offer to meet your specific
-            needs.
+            Descubra como os serviços personalizados e os microsserviços podem
+            simplificar seus processos, aumentar a eficiência e a produtividade
+            para o crescimento de seus negócios. crescimento. Abaixo, confira as
+            soluções que ofereço para atender às suas necessidades específicas.
           </p>
         </div>
       </div>

@@ -10,11 +10,12 @@ export default function ContactHero() {
           <h1
             className={`${heathergreen.className} text-5xl uppercase sm-3:text-[5rem] md-4:text-[7rem]`}
           >
-            Contact
+            Contato
           </h1>
           <p className="text-xs font-normal sm-3:text-sm md-3:text-base">
-            To learn more about my work or discuss a possible collaboration,
-            please don't hesitate to get in touch. I'm happy to chat!
+            Para saber mais sobre meu trabalho ou discutir uma possível
+            colaboração, não hesite em entrar em contato. Tenho certeza de que
+            podemos criar muitas soluções juntos!
           </p>
         </div>
       </div>
