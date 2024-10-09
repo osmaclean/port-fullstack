@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import { WorkProjectCardProps } from '@/@types/interface'
+import { WorkProjectCardHomeProps } from '@/@types/interface'
 import { Separator } from '@/components/ui/separator'
 
-export default function WorkCard({ card }: WorkProjectCardProps) {
+export default function WorkCardHome({ card }: WorkProjectCardHomeProps) {
   return (
     <div className="flex w-full max-w-full flex-col items-center justify-center gap-4 border-b border-primary-300 px-4 py-8 sm-0:px-6 sm-2:px-10 sm-3:min-h-[350px] sm-3:max-w-[300px] sm-3:border-transparent">
       <h1 className="w-full text-left text-2xl font-bold uppercase leading-5 text-primary-100">
@@ -67,16 +67,18 @@ export default function WorkCard({ card }: WorkProjectCardProps) {
                 {card.title !== 'Convert3D Pro' &&
                   card.title !== 'Kleitow Moreira' &&
                   card.title !== 'Mar de Rosas' && (
-                    <Image
-                      alt="Github Icon"
-                      aria-label="Github Icon"
-                      src="/github.png"
-                      width={56}
-                      height={56}
-                      className="w-5"
-                    />
+                    <Link href={card.github || '#'} target="_blank">
+                      <Image
+                        alt="Github Icon"
+                        aria-label="Github Icon"
+                        src="/github.png"
+                        width={56}
+                        height={56}
+                        className="w-5"
+                      />
+                    </Link>
                   )}
-                <Link href={card.href} target="_blank">
+                <Link href={card.website} target="_blank">
                   <Image
                     alt="WebSite Icon"
                     aria-label="WebSite Icon"

@@ -73,11 +73,11 @@ export default function Footer() {
         </div>
 
         <div className="inline-block w-full bg-primary-100 px-8 py-1 text-center text-xs text-primary-500 lg-2:text-sm">
-          Designed and built by{' '}
-          <span className="text-primary-300">Lucas Maclean</span> with{' '}
-          <span className="text-primary-300">Love</span> &{' '}
-          <span className="text-primary-300">Coffee</span> | All rights reserved
-          ©
+          Projetado e criado por{' '}
+          <span className="text-primary-300">Lucas Maclean</span> com{' '}
+          <span className="text-primary-300">Amor</span> &{' '}
+          <span className="text-primary-300">Café</span> | © Todos os direitos
+          reservados
         </div>
       </div>
     </footer>

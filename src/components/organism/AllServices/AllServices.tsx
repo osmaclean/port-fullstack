@@ -27,12 +27,12 @@ export default function AllServices() {
         />
         <div className="flex flex-1 flex-col items-start justify-start">
           <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            Web Application Development
+            Desenvolvimento de Aplicativos da Web
           </h3>
           <span className="text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Creation of interactive web applications using frameworks and
-            libraries such as React.js on the front-end, and Node.js, Python on
-            the back-end.
+            Criação de aplicativos interativos da Web usando estruturas e
+            bibliotecas como React.js, Next.js, Vite no front-end e Node.js,
+            Python no back-end.
           </span>
         </div>
       </div>
@@ -47,11 +47,11 @@ export default function AllServices() {
         <Palette size={20} className="sm-3:h-6 sm-3:w-6 md-3:h-7 md-3:w-7" />
         <div className="flex flex-1 flex-col items-end justify-end">
           <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            Prototyping
+            Prototipagem
           </h3>
           <span className="text-right text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Development of low and medium fidelity prototypes to validate the
-            flow and user experience within the application.
+            Desenvolvimento de protótipos de baixa e média fidelidade para
+            validar o fluxo e a experiência do usuário no aplicativo.
           </span>
         </div>
       </div>
@@ -66,11 +66,12 @@ export default function AllServices() {
         <Gear size={20} className="sm-3:h-6 sm-3:w-6 md-3:h-7 md-3:w-7" />
         <div className="flex flex-1 flex-col items-start justify-start">
           <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            Testing and Quality Assurance
+            Testes e Garantia de Qualidade
           </h3>
           <span className="text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Writing and executing unit tests, integration tests and end-to-end
-            tests to ensure software quality and stability.
+            Escrever e executar testes unitários, testes de integração e testes
+            de ponta a ponta testes para garantir a qualidade e a estabilidade
+            do software com tecnologias Playwright, Jest, Vitest e Cypress.
           </span>
         </div>
       </div>
@@ -85,11 +86,12 @@ export default function AllServices() {
         <Layout size={20} className="sm-3:h-6 sm-3:w-6 md-3:h-7 md-3:w-7" />
         <div className="flex flex-1 flex-col items-end justify-end">
           <h3 className="text-right text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            User Interface Development (UI/UX)
+            Desenvolvimento da Interface do Usuário (UI/UX)
           </h3>
           <span className="text-right text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Design and development of low and medium quality user-friendly and
-            intuitive user interfaces, ensuring a good user experience (UX).
+            Projeto e desenvolvimento de interfaces de usuário intuitivas e
+            fáceis de usar de baixa e média qualidade, intuitivas e garantindo
+            uma boa experiência do usuário (UX).
           </span>
         </div>
       </div>
@@ -107,11 +109,11 @@ export default function AllServices() {
         />
         <div className="flex flex-1 flex-col items-start justify-start">
           <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            User Authentication and Authorization
+            Autenticação e Autorização de Usuários
           </h3>
           <span className="text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Implementation of login and access control systems or other
-            authentication and authorization methods.
+            Implementação de sistemas de login e controle de acesso ou outros
+            métodos de autenticação e autorização.
           </span>
         </div>
       </div>
@@ -126,11 +128,12 @@ export default function AllServices() {
         <Database size={20} className="sm-3:h-6 sm-3:w-6 md-3:h-7 md-3:w-7" />
         <div className="flex flex-1 flex-col items-end justify-end">
           <h3 className="text-right text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            Database Management
+            Gerenciamento de Banco de Dados
           </h3>
           <span className="text-right text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Design, implementation and maintenance of relational and
-            non-relational databases to store and manage application data.
+            Design, implementação e manutenção de bancos de dados relacionais e
+            não relacionais para armazenar, persistir e gerenciar dados de
+            aplicativos.
           </span>
         </div>
       </div>
@@ -148,11 +151,11 @@ export default function AllServices() {
         />
         <div className="flex flex-1 flex-col items-start justify-start">
           <h3 className="text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            Notification Service
+            Serviço de Notificação
           </h3>
           <span className="text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Sends push notifications, emails, or SMS messages to users about
-            important events or updates.
+            Envia notificações push, e-mails ou mensagens SMS aos usuários sobre
+            eventos ou atualizações importantes.
           </span>
         </div>
       </div>
@@ -167,11 +170,11 @@ export default function AllServices() {
         <HandCoins size={20} className="sm-3:h-6 sm-3:w-6 md-3:h-7 md-3:w-7" />
         <div className="flex flex-1 flex-col items-end justify-end">
           <h3 className="text-right text-sm font-bold text-primary-500 sm-3:text-base md-3:text-lg">
-            Payment Service
+            Serviço de Pagamento
           </h3>
           <span className="text-right text-xs font-light text-primary-500 sm-3:text-sm md-3:text-base">
-            Payment and financial transaction processes, integrating with
-            payment providers such as bank gateways.
+            Processos de pagamento e transações financeiras, integrando-se com
+            provedores de pagamento, como gateways bancários.
           </span>
         </div>
       </div>

@@ -12,11 +12,11 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import Scroll from '@/components/molecules/Scroll/Scroll'
-import WorkCard from '@/components/molecules/WorkCard/WorkCard'
+import WorkCardHome from '@/components/molecules/WorkCardHome/WorkCardHome'
 
 import { WorkProjectCard } from '../../../mock/projects.mock'
 
-export default function Works() {
+export default function WorksHome() {
   return (
     <section className="flex w-full select-none flex-col items-center justify-center gap-6 border-t-[1px] border-primary-100 pb-6">
       <div className="flex w-full gap-4 overflow-hidden whitespace-nowrap">
@@ -53,7 +53,7 @@ export default function Works() {
       <section className="w-full px-4 sm-1:px-10 md-1:px-16 md-4:px-32 lg-1:px-44 lg-2:max-w-[800px] lg-2:px-0">
         <div className="flex w-full flex-col items-center justify-center border border-b-0 border-primary-300 sm-3:hidden sm-3:flex-row sm-3:flex-wrap sm-3:border-b">
           {WorkProjectCard.map((card, index) => (
-            <WorkCard card={card} key={index} />
+            <WorkCardHome card={card} key={index} />
           ))}
         </div>
 
@@ -135,16 +135,18 @@ export default function Works() {
                       {card.title !== 'Convert3D Pro' &&
                         card.title !== 'Kleitow Moreira' &&
                         card.title !== 'Mar de Rosas' && (
-                          <Image
-                            alt="Github Icon"
-                            aria-label="Github Icon"
-                            src="/github.png"
-                            width={56}
-                            height={56}
-                            className="w-5 md-2:w-6"
-                          />
+                          <Link href={card.github || '#'} target="_blank">
+                            <Image
+                              alt="Github Icon"
+                              aria-label="Github Icon"
+                              src="/github.png"
+                              width={56}
+                              height={56}
+                              className="w-5"
+                            />
+                          </Link>
                         )}
-                      <Link href={card.href} target="_blank">
+                      <Link href={card.website} target="_blank">
                         <Image
                           alt="WebSite Icon"
                           aria-label="WebSite Icon"
