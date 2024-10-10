@@ -26,12 +26,18 @@ export default function AllJobs() {
           <span className="bg-primary-500 px-2">react.js</span>
         </div>
 
-        <Image
-          src={'/projects/project1st.png'}
-          alt="Kleytow Moreira Project Image"
-          width={1220}
-          height={625}
-        />
+        <Link
+          href={'https://www.kleytowmoreira.art/'}
+          target="_blank"
+          className="duration-300 hover:opacity-70"
+        >
+          <Image
+            src={'/projects/project1st.png'}
+            alt="Kleytow Moreira Project Image"
+            width={1220}
+            height={625}
+          />
+        </Link>
 
         <p className="w-full text-xs sm-3:text-sm md-3:text-base">
           Este projeto foi desenvolvido ao longo de 3 meses para o artista 3D
@@ -130,12 +136,18 @@ export default function AllJobs() {
           <span className="bg-primary-500 px-2">react.js</span>
         </div>
 
-        <Image
-          src={'/projects/project3th.png'}
-          alt="Convert 3D Pro Project Image"
-          width={1220}
-          height={625}
-        />
+        <Link
+          href={'https://convert3dpro.com/'}
+          target="_blank"
+          className="duration-300 hover:opacity-70"
+        >
+          <Image
+            src={'/projects/project3th.png'}
+            alt="Convert 3D Pro Project Image"
+            width={1220}
+            height={625}
+          />
+        </Link>
 
         <p className="w-full text-xs sm-3:text-sm md-3:text-base">
           O projeto Convert 3D é uma plataforma desenvolvida para conversão de
@@ -218,12 +230,18 @@ export default function AllJobs() {
           <span className="bg-primary-500 px-2">react.js</span>
         </div>
 
-        <Image
-          src={'/projects/project2nd.png'}
-          alt="Mar de Rosas Project Image"
-          width={1220}
-          height={625}
-        />
+        <Link
+          href={'https://confirme.omarderosas.com.br/'}
+          target="_blank"
+          className="duration-300 hover:opacity-70"
+        >
+          <Image
+            src={'/projects/project2nd.png'}
+            alt="Mar de Rosas Project Image"
+            width={1220}
+            height={625}
+          />
+        </Link>
 
         <p className="w-full text-xs sm-3:text-sm md-3:text-base">
           O projeto Mar de Rosas é uma landing page desenvolvida para uma
@@ -305,12 +323,18 @@ export default function AllJobs() {
           <span className="bg-primary-500 px-2">react.js</span>
         </div>
 
-        <Image
-          src={'/projects/project4th.png'}
-          alt="Mecânica Mundial Project Image"
-          width={1220}
-          height={625}
-        />
+        <Link
+          href={'https://mecanica-mundial.vercel.app/'}
+          target="_blank"
+          className="duration-300 hover:opacity-70"
+        >
+          <Image
+            src={'/projects/project4th.png'}
+            alt="Mecânica Mundial Project Image"
+            width={1220}
+            height={625}
+          />
+        </Link>
 
         <p className="w-full text-xs sm-3:text-sm md-3:text-base">
           O projeto Mecânica Mundial é uma landing page desenvolvida para uma
@@ -407,12 +431,18 @@ export default function AllJobs() {
           <span className="bg-primary-500 px-2">react.js</span>
         </div>
 
-        <Image
-          src={'/projects/project5th.png'}
-          alt="Ignite Timer Project Image"
-          width={1220}
-          height={625}
-        />
+        <Link
+          href={'https://ignite-timer-seven-chi.vercel.app/'}
+          target="_blank"
+          className="duration-300 hover:opacity-70"
+        >
+          <Image
+            src={'/projects/project5th.png'}
+            alt="Ignite Timer Project Image"
+            width={1220}
+            height={625}
+          />
+        </Link>
 
         <p className="w-full text-xs sm-3:text-sm md-3:text-base">
           Projeto construído com o conceito de pomodoro, onde aprimorei minhas

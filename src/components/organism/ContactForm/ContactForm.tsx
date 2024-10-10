@@ -69,6 +69,18 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
+    const phoneDigits = formData.phone.replace(/\D/g, '')
+
+    if (formData.phone && phoneDigits.length < 11) {
+      notify('O número de telefone deve conter pelo menos 11 dígitos.', 'error')
+      return
+    }
+
+    if (!formData.message.trim()) {
+      notify('A mensagem não pode estar vazia.', 'error')
+      return
+    }
+
     try {
       const response = await fetch('https://formspree.io/f/mrbzlzev', {
         method: 'POST',
